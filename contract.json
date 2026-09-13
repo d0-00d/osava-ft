@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "model": "osava-smollm",
+  "base": "HuggingFaceTB/SmolLM3-3B",
+  "generated_by": "osava-ft/export_contract.py",
+  "input": {
+    "field_order": [
+      "EventID",
+      "EventType",
+      "Image",
+      "CommandLine",
+      "ParentImage",
+      "ParentCommandLine",
+      "User",
+      "Signed",
+      "Signer",
+      "DestinationIp",
+      "DestinationPort",
+      "DestinationHostname",
+      "TargetFilename",
+      "LogonType",
+      "AuthPackage"
+    ],
+    "max_cmdline": 512,
+    "truncation_marker": "<truncated>",
+    "user_message_template": "Event:\n{body}\n\nClassify.",
+    "supported_input_types": [
+      "log_lines",
+      "process_list",
+      "registry_entry"
+    ]
+  },
+  "severity": {
+    "scale": [
+      "none",
+      "low",
+      "medium",
+      "high"
+    ],
+    "accepted_on_input": [
+      "none",
+      "low",
+      "medium",
+      "high",
+      "critical"
+    ],
+    "bucket": {
+      "none": "benign",
+      "low": "benign",
+      "medium": "suspicious",
+      "high": "malicious",
+      "critical": "malicious"
+    },
+    "classes": [
+      "benign",
+      "suspicious",
+      "malicious"
+    ],
+    "score_prefix": "{\"severity\": \""
+  },
+  "routing": {
+    "escalate_severities": [
+      "high",
+      "critical"
+    ],
+    "escalate_threat_types": [
+      "lateral_movement",
+      "data_exfiltration",
+      "ransomware",
+      "privilege_escalation",
+      "supply_chain",
+      "rce",
+      "zero_day"
+    ],
+    "confidence_reported_by_model": false,
+    "confidence_from_severity": {
+      "none": 0.05,
+      "low": 0.2,
+      "medium": 0.5,
+      "high": 0.85,
+      "critical": 0.95
+    }
+  },
+  "indicators": [
+    "blank_or_guest_account",
+    "browser_spawns_shell",
+    "discovery_command",
+    "download_cradle",
+    "encoded_command",
+    "exec_policy_bypass",
+    "expected_parent",
+    "hidden_window",
+    "legacy_auth_protocol",
+    "lolbin_exec",
+    "masquerading_name",
+    "office_spawns_shell",
+    "outbound_known_good",
+    "outbound_uncommon_port",
+    "privilege_escalation",
+    "raw_ip_no_dns",
+    "remote_service_install",
+    "restricted_service_acct",
+    "service_binary_created",
+    "service_host_spawns_proc",
+    "signature_invalid",
+    "signed_known_vendor",
+    "signed_microsoft",
+    "smb_admin_share",
+    "system32_path",
+    "system_context_exec",
+    "temp_path_exec",
+    "unsigned_binary"
+  ],
+  "output_fields": [
+    "severity",
+    "isThreat",
+    "threatType",
+    "indicators",
+    "reasoning"
+  ],
+  "prompt_sha256": "8906351f16374f4fb7d794d5c6eba0e872892e3d263e24cc356db0773ce6215a",
+  "prompt_variant": "strict"
+}
