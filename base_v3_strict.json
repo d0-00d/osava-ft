@@ -1,0 +1,952 @@
+[
+  {
+    "id": "B010",
+    "name": "normal IIS activity",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.42354187862338216,
+      "low": 0.13735253959428317,
+      "medium": 0.21259056195993384,
+      "high": 0.2265150198224009
+    },
+    "class_probs": {
+      "benign": 0.5608944182176654,
+      "suspicious": 0.21259056195993384,
+      "malicious": 0.2265150198224009
+    },
+    "margin": 0.3343793983952645
+  },
+  {
+    "id": "B025",
+    "name": "winhttp.dll load",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.54826622658953,
+      "low": 0.1222160793478073,
+      "medium": 0.11479911890152154,
+      "high": 0.2147185751611412
+    },
+    "class_probs": {
+      "benign": 0.6704823059373373,
+      "suspicious": 0.11479911890152154,
+      "malicious": 0.2147185751611412
+    },
+    "margin": 0.45576373077619603
+  },
+  {
+    "id": "B005",
+    "name": "LOLBin in its legitimate role",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.46206055541599284,
+      "low": 0.14993315384860476,
+      "medium": 0.14075691275191757,
+      "high": 0.24724937798348484
+    },
+    "class_probs": {
+      "benign": 0.6119937092645976,
+      "suspicious": 0.14075691275191757,
+      "malicious": 0.24724937798348484
+    },
+    "margin": 0.3647443312811128
+  },
+  {
+    "id": "B038",
+    "name": "standard logon",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.4129069258007424,
+      "low": 0.18304775485999697,
+      "medium": 0.1831001327351006,
+      "high": 0.22094518660416007
+    },
+    "class_probs": {
+      "benign": 0.5959546806607394,
+      "suspicious": 0.1831001327351006,
+      "malicious": 0.22094518660416007
+    },
+    "margin": 0.37500949405657935
+  },
+  {
+    "id": "B040",
+    "name": "standard logon",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.4049578255985745,
+      "low": 0.15838372682338667,
+      "medium": 0.19116907973688624,
+      "high": 0.2454893678411526
+    },
+    "class_probs": {
+      "benign": 0.5633415524219612,
+      "suspicious": 0.19116907973688624,
+      "malicious": 0.2454893678411526
+    },
+    "margin": 0.31785218458080855
+  },
+  {
+    "id": "B008",
+    "name": "interactive logon chain",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5624706509142481,
+      "low": 0.12540581970802067,
+      "medium": 0.11779651834915976,
+      "high": 0.19432701102857147
+    },
+    "class_probs": {
+      "benign": 0.6878764706222688,
+      "suspicious": 0.11779651834915976,
+      "malicious": 0.19432701102857147
+    },
+    "margin": 0.4935494595936973
+  },
+  {
+    "id": "B023",
+    "name": "HTTPS to a named service",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.23620150672358592,
+      "low": 0.162192371130686,
+      "medium": 0.2358007728440932,
+      "high": 0.36580534930163483
+    },
+    "class_probs": {
+      "benign": 0.39839387785427194,
+      "suspicious": 0.2358007728440932,
+      "malicious": 0.36580534930163483
+    },
+    "margin": 0.03258852855263711
+  },
+  {
+    "id": "B022",
+    "name": "non-standard port, known service",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5424475104866217,
+      "low": 0.13696509893668185,
+      "medium": 0.15516405152313556,
+      "high": 0.1654233390535609
+    },
+    "class_probs": {
+      "benign": 0.6794126094233035,
+      "suspicious": 0.15516405152313556,
+      "malicious": 0.1654233390535609
+    },
+    "margin": 0.5139892703697426
+  },
+  {
+    "id": "B004",
+    "name": "Office application launch",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.4781756505286465,
+      "low": 0.12860046490115304,
+      "medium": 0.12079242476399263,
+      "high": 0.27243145980620787
+    },
+    "class_probs": {
+      "benign": 0.6067761154297996,
+      "suspicious": 0.12079242476399263,
+      "malicious": 0.27243145980620787
+    },
+    "margin": 0.3343446556235917
+  },
+  {
+    "id": "B032",
+    "name": "registry write",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.2385271869096545,
+      "low": 0.1538555787319612,
+      "medium": 0.23830890868290006,
+      "high": 0.3693083256754843
+    },
+    "class_probs": {
+      "benign": 0.39238276564161567,
+      "suspicious": 0.23830890868290006,
+      "malicious": 0.3693083256754843
+    },
+    "margin": 0.0230744399661314
+  },
+  {
+    "id": "B034",
+    "name": "registry write",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3209634127883672,
+      "low": 0.15146468305572366,
+      "medium": 0.20695266309012111,
+      "high": 0.320619241065788
+    },
+    "class_probs": {
+      "benign": 0.47242809584409085,
+      "suspicious": 0.20695266309012111,
+      "malicious": 0.320619241065788
+    },
+    "margin": 0.15180885477830286
+  },
+  {
+    "id": "B036",
+    "name": "registry write",
+    "gold": "benign",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.15766995105606765,
+      "low": 0.1573789613853787,
+      "medium": 0.22919761723719226,
+      "high": 0.4557534703213614
+    },
+    "class_probs": {
+      "benign": 0.3150489124414464,
+      "suspicious": 0.22919761723719226,
+      "malicious": 0.4557534703213614
+    },
+    "margin": 0.14070455787991498
+  },
+  {
+    "id": "B007",
+    "name": "security product service start",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5212977630044688,
+      "low": 0.12374877315775337,
+      "medium": 0.12369614920216564,
+      "high": 0.23125731463561214
+    },
+    "class_probs": {
+      "benign": 0.6450465361622222,
+      "suspicious": 0.12369614920216564,
+      "malicious": 0.23125731463561214
+    },
+    "margin": 0.41378922152661
+  },
+  {
+    "id": "B011",
+    "name": "desktop app launched from shell",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.6028433968939019,
+      "low": 0.12620723891719937,
+      "medium": 0.09834430380262747,
+      "high": 0.17260506038627127
+    },
+    "class_probs": {
+      "benign": 0.7290506358111013,
+      "suspicious": 0.09834430380262747,
+      "malicious": 0.17260506038627127
+    },
+    "margin": 0.5564455754248301
+  },
+  {
+    "id": "B001",
+    "name": "service host startup",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5597124004173288,
+      "low": 0.14136867275021417,
+      "medium": 0.11722736257664686,
+      "high": 0.18169156425581012
+    },
+    "class_probs": {
+      "benign": 0.701081073167543,
+      "suspicious": 0.11722736257664686,
+      "malicious": 0.18169156425581012
+    },
+    "margin": 0.5193895089117329
+  },
+  {
+    "id": "B009",
+    "name": "unsigned but legitimate binary",
+    "gold": "benign",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.14417955484677805,
+      "low": 0.18529987073083568,
+      "medium": 0.2527958869469571,
+      "high": 0.41772468747542923
+    },
+    "class_probs": {
+      "benign": 0.3294794255776137,
+      "suspicious": 0.2527958869469571,
+      "malicious": 0.41772468747542923
+    },
+    "margin": 0.08824526189781551
+  },
+  {
+    "id": "B002",
+    "name": "Code.exe from AppData",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5054684153092508,
+      "low": 0.11993076023014679,
+      "medium": 0.13590389163599612,
+      "high": 0.23869693282460624
+    },
+    "class_probs": {
+      "benign": 0.6253991755393976,
+      "suspicious": 0.13590389163599612,
+      "malicious": 0.23869693282460624
+    },
+    "margin": 0.38670224271479137
+  },
+  {
+    "id": "M001",
+    "name": "wermgr spawned by rundll32 temp DLL",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.38199566371375826,
+      "low": 0.1693176893233406,
+      "medium": 0.16923810138610706,
+      "high": 0.27944854557679405
+    },
+    "class_probs": {
+      "benign": 0.5513133530370988,
+      "suspicious": 0.16923810138610706,
+      "malicious": 0.27944854557679405
+    },
+    "margin": 0.2718648074603048
+  },
+  {
+    "id": "M002",
+    "name": "IIS worker spawns encoded PowerShell",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.19746338848149894,
+      "low": 0.17432947790291214,
+      "medium": 0.21012151952658997,
+      "high": 0.41808561408899897
+    },
+    "class_probs": {
+      "benign": 0.3717928663844111,
+      "suspicious": 0.21012151952658997,
+      "malicious": 0.41808561408899897
+    },
+    "margin": 0.046292747704587855
+  },
+  {
+    "id": "M003",
+    "name": "comsvcs MiniDump LSASS",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.470566769361711,
+      "low": 0.13476776702666737,
+      "medium": 0.1265694022911611,
+      "high": 0.2680960613204606
+    },
+    "class_probs": {
+      "benign": 0.6053345363883784,
+      "suspicious": 0.1265694022911611,
+      "malicious": 0.2680960613204606
+    },
+    "margin": 0.3372384750679178
+  },
+  {
+    "id": "M004",
+    "name": "CHM spawns cmd, pastebin fetch",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.021302851308391026,
+      "low": 0.08964696536119024,
+      "medium": 0.08959568362936537,
+      "high": 0.7994544997010533
+    },
+    "class_probs": {
+      "benign": 0.11094981666958126,
+      "suspicious": 0.08959568362936537,
+      "malicious": 0.7994544997010533
+    },
+    "margin": 0.688504683031472
+  },
+  {
+    "id": "M005",
+    "name": "cmd to rundll32 mshta remote",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1692512712469849,
+      "low": 0.1917539880651602,
+      "medium": 0.14926162494821565,
+      "high": 0.4897331157396392
+    },
+    "class_probs": {
+      "benign": 0.3610052593121451,
+      "suspicious": 0.14926162494821565,
+      "malicious": 0.4897331157396392
+    },
+    "margin": 0.12872785642749407
+  },
+  {
+    "id": "M006",
+    "name": "regsvr32 remote SCT (Squiblydoo)",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.15540630871542171,
+      "low": 0.13705465025364405,
+      "medium": 0.1651720389356138,
+      "high": 0.5423670020953204
+    },
+    "class_probs": {
+      "benign": 0.29246095896906577,
+      "suspicious": 0.1651720389356138,
+      "malicious": 0.5423670020953204
+    },
+    "margin": 0.24990604312625464
+  },
+  {
+    "id": "M007",
+    "name": "WMIC remote XSL (Squiblytwo)",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.3234273731739287,
+      "low": 0.1348146878006,
+      "medium": 0.12653886843430984,
+      "high": 0.41521907059116137
+    },
+    "class_probs": {
+      "benign": 0.4582420609745287,
+      "suspicious": 0.12653886843430984,
+      "malicious": 0.41521907059116137
+    },
+    "margin": 0.04302299038336732
+  },
+  {
+    "id": "M008",
+    "name": "wscript runs .ico as VBS",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1620061482897514,
+      "low": 0.13433804593386273,
+      "medium": 0.17234942131735478,
+      "high": 0.5313063844590311
+    },
+    "class_probs": {
+      "benign": 0.29634419422361413,
+      "suspicious": 0.17234942131735478,
+      "malicious": 0.5313063844590311
+    },
+    "margin": 0.23496219023541698
+  },
+  {
+    "id": "M009",
+    "name": "control.exe runs .cpl from Downloads",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3785537346261395,
+      "low": 0.17870982734196822,
+      "medium": 0.14811397522366268,
+      "high": 0.2946224628082296
+    },
+    "class_probs": {
+      "benign": 0.5572635619681077,
+      "suspicious": 0.14811397522366268,
+      "malicious": 0.2946224628082296
+    },
+    "margin": 0.26264109915987804
+  },
+  {
+    "id": "M010",
+    "name": "services.exe spawns hidden PowerShell",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.09143528888119806,
+      "low": 0.13289604368984761,
+      "medium": 0.14130812844435828,
+      "high": 0.634360538984596
+    },
+    "class_probs": {
+      "benign": 0.22433133257104568,
+      "suspicious": 0.14130812844435828,
+      "malicious": 0.634360538984596
+    },
+    "margin": 0.41002920641355034
+  },
+  {
+    "id": "M011",
+    "name": "PsExec service binary",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5503212573817435,
+      "low": 0.13903324073755452,
+      "medium": 0.10822499720708506,
+      "high": 0.20242050467361697
+    },
+    "class_probs": {
+      "benign": 0.689354498119298,
+      "suspicious": 0.10822499720708506,
+      "malicious": 0.20242050467361697
+    },
+    "margin": 0.4869339934456811
+  },
+  {
+    "id": "M012",
+    "name": "PSEXESVC service registry",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.21965153128511747,
+      "low": 0.15071326643893326,
+      "medium": 0.21947752566834333,
+      "high": 0.41015767660760605
+    },
+    "class_probs": {
+      "benign": 0.37036479772405073,
+      "suspicious": 0.21947752566834333,
+      "malicious": 0.41015767660760605
+    },
+    "margin": 0.039792878883555316
+  },
+  {
+    "id": "M013",
+    "name": "WMI CommandLineEventConsumer",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.24849513586927222,
+      "low": 0.1603377298618976,
+      "medium": 0.18163179219375353,
+      "high": 0.4095353420750766
+    },
+    "class_probs": {
+      "benign": 0.40883286573116984,
+      "suspicious": 0.18163179219375353,
+      "malicious": 0.4095353420750766
+    },
+    "margin": 0.0007024763439067438
+  },
+  {
+    "id": "M016",
+    "name": "EfsPotato from temp",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.03435956614242638,
+      "low": 0.11986904058123005,
+      "medium": 0.1973537723824442,
+      "high": 0.6484176208938994
+    },
+    "class_probs": {
+      "benign": 0.15422860672365643,
+      "suspicious": 0.1973537723824442,
+      "malicious": 0.6484176208938994
+    },
+    "margin": 0.4510638485114552
+  },
+  {
+    "id": "M014",
+    "name": "schtasks SilentCleanup /i",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.43180618031623463,
+      "low": 0.14004723581677347,
+      "medium": 0.13161101864655533,
+      "high": 0.2965355652204365
+    },
+    "class_probs": {
+      "benign": 0.5718534161330081,
+      "suspicious": 0.13161101864655533,
+      "malicious": 0.2965355652204365
+    },
+    "margin": 0.2753178509125716
+  },
+  {
+    "id": "M017",
+    "name": "RoguePotato + nc64 reverse shell",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.041217885310038595,
+      "low": 0.14385001325564675,
+      "medium": 0.20917442221698812,
+      "high": 0.6057576792173266
+    },
+    "class_probs": {
+      "benign": 0.18506789856568534,
+      "suspicious": 0.20917442221698812,
+      "malicious": 0.6057576792173266
+    },
+    "margin": 0.3965832570003385
+  },
+  {
+    "id": "M015",
+    "name": "schtasks /create from temp XML",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.5042904992434292,
+      "low": 0.12741337944777723,
+      "medium": 0.14442571576801913,
+      "high": 0.22387040554077448
+    },
+    "class_probs": {
+      "benign": 0.6317038786912064,
+      "suspicious": 0.14442571576801913,
+      "malicious": 0.22387040554077448
+    },
+    "margin": 0.4078334731504319
+  },
+  {
+    "id": "M018",
+    "name": "psexecprivesc from Public",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.2167880636054796,
+      "low": 0.17990642015985514,
+      "medium": 0.24565704159140797,
+      "high": 0.35764847464325733
+    },
+    "class_probs": {
+      "benign": 0.3966944837653347,
+      "suspicious": 0.24565704159140797,
+      "malicious": 0.35764847464325733
+    },
+    "margin": 0.039046009122077396
+  },
+  {
+    "id": "S008",
+    "name": "account manipulation",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.42776739804562053,
+      "low": 0.13041783546078906,
+      "medium": 0.14784916456858666,
+      "high": 0.29396560192500376
+    },
+    "class_probs": {
+      "benign": 0.5581852335064096,
+      "suspicious": 0.14784916456858666,
+      "malicious": 0.29396560192500376
+    },
+    "margin": 0.2642196315814058
+  },
+  {
+    "id": "S009",
+    "name": "host/domain enumeration",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.6299402642901069,
+      "low": 0.1404487963224182,
+      "medium": 0.0800232513368898,
+      "high": 0.1495876880505851
+    },
+    "class_probs": {
+      "benign": 0.770389060612525,
+      "suspicious": 0.0800232513368898,
+      "malicious": 0.1495876880505851
+    },
+    "margin": 0.6208013725619399
+  },
+  {
+    "id": "S001",
+    "name": "dual-use administration tool",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.39047666220049926,
+      "low": 0.1528027238254914,
+      "medium": 0.15274466383150154,
+      "high": 0.3039759501425078
+    },
+    "class_probs": {
+      "benign": 0.5432793860259907,
+      "suspicious": 0.15274466383150154,
+      "malicious": 0.3039759501425078
+    },
+    "margin": 0.2393034358834829
+  },
+  {
+    "id": "S020",
+    "name": "staged file write",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.26286508316743973,
+      "low": 0.14961055236635135,
+      "medium": 0.18054740302528155,
+      "high": 0.4069769614409273
+    },
+    "class_probs": {
+      "benign": 0.4124756355337911,
+      "suspicious": 0.18054740302528155,
+      "malicious": 0.4069769614409273
+    },
+    "margin": 0.005498674092863753
+  },
+  {
+    "id": "S022",
+    "name": "staged file write",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3385689315197939,
+      "low": 0.17007908675128405,
+      "medium": 0.1927089562886631,
+      "high": 0.2986430254402589
+    },
+    "class_probs": {
+      "benign": 0.508648018271078,
+      "suspicious": 0.1927089562886631,
+      "malicious": 0.2986430254402589
+    },
+    "margin": 0.21000499283081908
+  },
+  {
+    "id": "S004",
+    "name": "internal remote fetch",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3979478393359277,
+      "low": 0.1556344696310992,
+      "medium": 0.15558364250819154,
+      "high": 0.2908340485247815
+    },
+    "class_probs": {
+      "benign": 0.5535823089670269,
+      "suspicious": 0.15558364250819154,
+      "malicious": 0.2908340485247815
+    },
+    "margin": 0.26274826044224536
+  },
+  {
+    "id": "S028",
+    "name": "anomalous logon",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.4404365404030488,
+      "low": 0.14289263657887255,
+      "medium": 0.19526898625274888,
+      "high": 0.22140183676532973
+    },
+    "class_probs": {
+      "benign": 0.5833291769819213,
+      "suspicious": 0.19526898625274888,
+      "malicious": 0.22140183676532973
+    },
+    "margin": 0.36192734021659156
+  },
+  {
+    "id": "S018",
+    "name": "anomalous outbound connection",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3696131414113038,
+      "low": 0.17442779084932397,
+      "medium": 0.18571575770552554,
+      "high": 0.2702433100338467
+    },
+    "class_probs": {
+      "benign": 0.5440409322606278,
+      "suspicious": 0.18571575770552554,
+      "malicious": 0.2702433100338467
+    },
+    "margin": 0.27379762222678106
+  },
+  {
+    "id": "S005",
+    "name": "persistence mechanism created",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.11250020398176262,
+      "low": 0.1273889524972025,
+      "medium": 0.22354952269294082,
+      "high": 0.5365613208280942
+    },
+    "class_probs": {
+      "benign": 0.23988915647896514,
+      "suspicious": 0.22354952269294082,
+      "malicious": 0.5365613208280942
+    },
+    "margin": 0.296672164349129
+  },
+  {
+    "id": "S024",
+    "name": "grey-area registry change",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.2060678934982384,
+      "low": 0.12481616069572475,
+      "medium": 0.2333018439058829,
+      "high": 0.435814101900154
+    },
+    "class_probs": {
+      "benign": 0.33088405419396316,
+      "suspicious": 0.2333018439058829,
+      "malicious": 0.435814101900154
+    },
+    "margin": 0.10493004770619085
+  },
+  {
+    "id": "S026",
+    "name": "grey-area registry change",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.13472895899425863,
+      "low": 0.14321738126690825,
+      "medium": 0.22173185768194284,
+      "high": 0.5003218020568903
+    },
+    "class_probs": {
+      "benign": 0.2779463402611669,
+      "suspicious": 0.22173185768194284,
+      "malicious": 0.5003218020568903
+    },
+    "margin": 0.22237546179572337
+  },
+  {
+    "id": "S003",
+    "name": "remote administration",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.2852863613358554,
+      "low": 0.1624662620520597,
+      "medium": 0.16234359598143983,
+      "high": 0.3899037806306452
+    },
+    "class_probs": {
+      "benign": 0.4477526233879151,
+      "suspicious": 0.16234359598143983,
+      "malicious": 0.3899037806306452
+    },
+    "margin": 0.057848842757269925
+  },
+  {
+    "id": "S007",
+    "name": "pre-impact reconnaissance",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.26120039638897263,
+      "low": 0.13977010303222676,
+      "medium": 0.16845943925084572,
+      "high": 0.4305700613279549
+    },
+    "class_probs": {
+      "benign": 0.4009704994211994,
+      "suspicious": 0.16845943925084572,
+      "malicious": 0.4305700613279549
+    },
+    "margin": 0.0295995619067555
+  },
+  {
+    "id": "S006",
+    "name": "bulk archive to Temp",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.29206583454534363,
+      "low": 0.15619097322922998,
+      "medium": 0.17698494349544527,
+      "high": 0.37475824872998115
+    },
+    "class_probs": {
+      "benign": 0.4482568077745736,
+      "suspicious": 0.17698494349544527,
+      "malicious": 0.37475824872998115
+    },
+    "margin": 0.07349855904459246
+  },
+  {
+    "id": "S002",
+    "name": "unsigned administrative tooling",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.0655593464672366,
+      "low": 0.14772322044651406,
+      "medium": 0.20187904468926826,
+      "high": 0.584838388396981
+    },
+    "class_probs": {
+      "benign": 0.21328256691375067,
+      "suspicious": 0.20187904468926826,
+      "malicious": 0.584838388396981
+    },
+    "margin": 0.3715558214832303
+  }
+]

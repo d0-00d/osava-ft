@@ -1,0 +1,2624 @@
+[
+  {
+    "id": "B010",
+    "name": "normal IIS activity",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.15287607512112772,
+      "low": 0.2799465126497652,
+      "medium": 0.3337862858019772,
+      "high": 0.23339112642712978
+    },
+    "class_probs": {
+      "benign": 0.43282258777089294,
+      "suspicious": 0.3337862858019772,
+      "malicious": 0.23339112642712978
+    },
+    "margin": 0.09903630196891572
+  },
+  {
+    "id": "B025",
+    "name": "winhttp.dll load",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3699066476154547,
+      "low": 0.3482116924917398,
+      "medium": 0.18007328200296918,
+      "high": 0.10180837788983627
+    },
+    "class_probs": {
+      "benign": 0.7181183401071944,
+      "suspicious": 0.18007328200296918,
+      "malicious": 0.10180837788983627
+    },
+    "margin": 0.5380450581042253
+  },
+  {
+    "id": "B005",
+    "name": "LOLBin in its legitimate role",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.25052180530711976,
+      "low": 0.39195472221111194,
+      "medium": 0.2346934767206124,
+      "high": 0.12282999576115584
+    },
+    "class_probs": {
+      "benign": 0.6424765275182317,
+      "suspicious": 0.2346934767206124,
+      "malicious": 0.12282999576115584
+    },
+    "margin": 0.40778305079761934
+  },
+  {
+    "id": "B038",
+    "name": "standard logon",
+    "gold": "benign",
+    "pred": "suspicious",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.1265134195638418,
+      "low": 0.23742451201951464,
+      "medium": 0.4151226971036145,
+      "high": 0.22093937131302913
+    },
+    "class_probs": {
+      "benign": 0.3639379315833564,
+      "suspicious": 0.4151226971036145,
+      "malicious": 0.22093937131302913
+    },
+    "margin": 0.05118476552025808
+  },
+  {
+    "id": "B040",
+    "name": "standard logon",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.14914476780753624,
+      "low": 0.2971397921168838,
+      "medium": 0.3572219220692841,
+      "high": 0.19649351800629575
+    },
+    "class_probs": {
+      "benign": 0.44628455992442007,
+      "suspicious": 0.3572219220692841,
+      "malicious": 0.19649351800629575
+    },
+    "margin": 0.08906263785513596
+  },
+  {
+    "id": "B008",
+    "name": "interactive logon chain",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.37298977282100687,
+      "low": 0.38325376438509134,
+      "medium": 0.1565776297466102,
+      "high": 0.08717883304729152
+    },
+    "class_probs": {
+      "benign": 0.7562435372060983,
+      "suspicious": 0.1565776297466102,
+      "malicious": 0.08717883304729152
+    },
+    "margin": 0.5996659074594881
+  },
+  {
+    "id": "B023",
+    "name": "HTTPS to a named service",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.19507866302490492,
+      "low": 0.3118811186125773,
+      "medium": 0.2865477784547847,
+      "high": 0.20649243990773314
+    },
+    "class_probs": {
+      "benign": 0.5069597816374822,
+      "suspicious": 0.2865477784547847,
+      "malicious": 0.20649243990773314
+    },
+    "margin": 0.22041200318269755
+  },
+  {
+    "id": "B022",
+    "name": "non-standard port, known service",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.17315116370746175,
+      "low": 0.23780148387177483,
+      "medium": 0.23464983065534203,
+      "high": 0.35439752176542144
+    },
+    "class_probs": {
+      "benign": 0.41095264757923655,
+      "suspicious": 0.23464983065534203,
+      "malicious": 0.35439752176542144
+    },
+    "margin": 0.05655512581381511
+  },
+  {
+    "id": "B004",
+    "name": "Office application launch",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3726287592752645,
+      "low": 0.40693152455567805,
+      "medium": 0.1599286664863407,
+      "high": 0.060511049682716714
+    },
+    "class_probs": {
+      "benign": 0.7795602838309426,
+      "suspicious": 0.1599286664863407,
+      "malicious": 0.060511049682716714
+    },
+    "margin": 0.6196316173446019
+  },
+  {
+    "id": "B032",
+    "name": "registry write",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.17000835296004327,
+      "low": 0.2543075039878017,
+      "medium": 0.25946155318392633,
+      "high": 0.3162225898682287
+    },
+    "class_probs": {
+      "benign": 0.424315856947845,
+      "suspicious": 0.25946155318392633,
+      "malicious": 0.3162225898682287
+    },
+    "margin": 0.1080932670796163
+  },
+  {
+    "id": "B034",
+    "name": "registry write",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2119259908683526,
+      "low": 0.3892517962173841,
+      "medium": 0.24067070053219858,
+      "high": 0.1581515123820647
+    },
+    "class_probs": {
+      "benign": 0.6011777870857367,
+      "suspicious": 0.24067070053219858,
+      "malicious": 0.1581515123820647
+    },
+    "margin": 0.3605070865535381
+  },
+  {
+    "id": "B036",
+    "name": "registry write",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.16209502551776137,
+      "low": 0.2641170734697379,
+      "medium": 0.25150029864534196,
+      "high": 0.3222876023671587
+    },
+    "class_probs": {
+      "benign": 0.42621209898749923,
+      "suspicious": 0.25150029864534196,
+      "malicious": 0.3222876023671587
+    },
+    "margin": 0.10392449662034053
+  },
+  {
+    "id": "B007",
+    "name": "security product service start",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.34128952001086,
+      "low": 0.3679757579670202,
+      "medium": 0.16284473189370807,
+      "high": 0.1278899901284118
+    },
+    "class_probs": {
+      "benign": 0.7092652779778802,
+      "suspicious": 0.16284473189370807,
+      "malicious": 0.1278899901284118
+    },
+    "margin": 0.5464205460841721
+  },
+  {
+    "id": "B011",
+    "name": "desktop app launched from shell",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3187112967345789,
+      "low": 0.4563765781638315,
+      "medium": 0.1656877744298551,
+      "high": 0.059224350671734545
+    },
+    "class_probs": {
+      "benign": 0.7750878748984104,
+      "suspicious": 0.1656877744298551,
+      "malicious": 0.059224350671734545
+    },
+    "margin": 0.6094001004685552
+  },
+  {
+    "id": "B001",
+    "name": "service host startup",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3983899368919475,
+      "low": 0.35628406482743147,
+      "medium": 0.1765873169491575,
+      "high": 0.06873868133146348
+    },
+    "class_probs": {
+      "benign": 0.7546740017193789,
+      "suspicious": 0.1765873169491575,
+      "malicious": 0.06873868133146348
+    },
+    "margin": 0.5780866847702214
+  },
+  {
+    "id": "B009",
+    "name": "unsigned but legitimate binary",
+    "gold": "benign",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.06958950496840022,
+      "low": 0.0659820991106487,
+      "medium": 0.2032124274584082,
+      "high": 0.6612159684625429
+    },
+    "class_probs": {
+      "benign": 0.13557160407904892,
+      "suspicious": 0.2032124274584082,
+      "malicious": 0.6612159684625429
+    },
+    "margin": 0.45800354100413476
+  },
+  {
+    "id": "B002",
+    "name": "Code.exe from AppData",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.33922626037645454,
+      "low": 0.40682739590279854,
+      "medium": 0.19390804715355914,
+      "high": 0.06003829656718768
+    },
+    "class_probs": {
+      "benign": 0.746053656279253,
+      "suspicious": 0.19390804715355914,
+      "malicious": 0.06003829656718768
+    },
+    "margin": 0.5521456091256939
+  },
+  {
+    "id": "M001",
+    "name": "wermgr spawned by rundll32 temp DLL",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.29724019140281377,
+      "low": 0.3746797572337322,
+      "medium": 0.23412740189266518,
+      "high": 0.0939526494707888
+    },
+    "class_probs": {
+      "benign": 0.6719199486365459,
+      "suspicious": 0.23412740189266518,
+      "malicious": 0.0939526494707888
+    },
+    "margin": 0.43779254674388074
+  },
+  {
+    "id": "M002",
+    "name": "IIS worker spawns encoded PowerShell",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.16216711686370666,
+      "low": 0.32112520258710203,
+      "medium": 0.2687503689952614,
+      "high": 0.24795731155392994
+    },
+    "class_probs": {
+      "benign": 0.4832923194508087,
+      "suspicious": 0.2687503689952614,
+      "malicious": 0.24795731155392994
+    },
+    "margin": 0.2145419504555473
+  },
+  {
+    "id": "M003",
+    "name": "comsvcs MiniDump LSASS",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.17612989746727628,
+      "low": 0.3122642541744691,
+      "medium": 0.2761278430688589,
+      "high": 0.2354780052893956
+    },
+    "class_probs": {
+      "benign": 0.4883941516417454,
+      "suspicious": 0.2761278430688589,
+      "malicious": 0.2354780052893956
+    },
+    "margin": 0.21226630857288648
+  },
+  {
+    "id": "M004",
+    "name": "CHM spawns cmd, pastebin fetch",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.04541494377533222,
+      "low": 0.05359978100989792,
+      "medium": 0.1694184070514187,
+      "high": 0.7315668681633513
+    },
+    "class_probs": {
+      "benign": 0.09901472478523014,
+      "suspicious": 0.1694184070514187,
+      "malicious": 0.7315668681633513
+    },
+    "margin": 0.5621484611119325
+  },
+  {
+    "id": "M005",
+    "name": "cmd to rundll32 mshta remote",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.04887404722104028,
+      "low": 0.058510922750430794,
+      "medium": 0.1873489052832838,
+      "high": 0.7052661247452451
+    },
+    "class_probs": {
+      "benign": 0.10738496997147107,
+      "suspicious": 0.1873489052832838,
+      "malicious": 0.7052661247452451
+    },
+    "margin": 0.5179172194619612
+  },
+  {
+    "id": "M006",
+    "name": "regsvr32 remote SCT (Squiblydoo)",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.15492223052443968,
+      "low": 0.28632421801482055,
+      "medium": 0.2824228001552968,
+      "high": 0.2763307513054431
+    },
+    "class_probs": {
+      "benign": 0.4412464485392602,
+      "suspicious": 0.2824228001552968,
+      "malicious": 0.2763307513054431
+    },
+    "margin": 0.1588236483839634
+  },
+  {
+    "id": "M007",
+    "name": "WMIC remote XSL (Squiblytwo)",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2135807513330681,
+      "low": 0.3619177266967957,
+      "medium": 0.2666922090249486,
+      "high": 0.15780931294518766
+    },
+    "class_probs": {
+      "benign": 0.5754984780298638,
+      "suspicious": 0.2666922090249486,
+      "malicious": 0.15780931294518766
+    },
+    "margin": 0.30880626900491515
+  },
+  {
+    "id": "M008",
+    "name": "wscript runs .ico as VBS",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.21395007949346073,
+      "low": 0.3325494183014901,
+      "medium": 0.2292271411354392,
+      "high": 0.22427336106960988
+    },
+    "class_probs": {
+      "benign": 0.5464994977949509,
+      "suspicious": 0.2292271411354392,
+      "malicious": 0.22427336106960988
+    },
+    "margin": 0.3172723566595117
+  },
+  {
+    "id": "M009",
+    "name": "control.exe runs .cpl from Downloads",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.21059274405609385,
+      "low": 0.4038838730114481,
+      "medium": 0.21459379340049445,
+      "high": 0.1709295895319635
+    },
+    "class_probs": {
+      "benign": 0.614476617067542,
+      "suspicious": 0.21459379340049445,
+      "malicious": 0.1709295895319635
+    },
+    "margin": 0.3998828236670475
+  },
+  {
+    "id": "M010",
+    "name": "services.exe spawns hidden PowerShell",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.21211178806583908,
+      "low": 0.3036481115820732,
+      "medium": 0.22943612675998745,
+      "high": 0.2548039735921003
+    },
+    "class_probs": {
+      "benign": 0.5157598996479122,
+      "suspicious": 0.22943612675998745,
+      "malicious": 0.2548039735921003
+    },
+    "margin": 0.26095592605581197
+  },
+  {
+    "id": "M011",
+    "name": "PsExec service binary",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3399640032767135,
+      "low": 0.3670216141901586,
+      "medium": 0.18970776124059038,
+      "high": 0.1033066212925375
+    },
+    "class_probs": {
+      "benign": 0.706985617466872,
+      "suspicious": 0.18970776124059038,
+      "malicious": 0.1033066212925375
+    },
+    "margin": 0.5172778562262816
+  },
+  {
+    "id": "M012",
+    "name": "PSEXESVC service registry",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1528443813657607,
+      "low": 0.21467654027912028,
+      "medium": 0.3001742858492039,
+      "high": 0.33230479250591505
+    },
+    "class_probs": {
+      "benign": 0.367520921644881,
+      "suspicious": 0.3001742858492039,
+      "malicious": 0.33230479250591505
+    },
+    "margin": 0.035216129138965935
+  },
+  {
+    "id": "M013",
+    "name": "WMI CommandLineEventConsumer",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2684445680036468,
+      "low": 0.40371773577120906,
+      "medium": 0.1901394332469008,
+      "high": 0.13769826297824334
+    },
+    "class_probs": {
+      "benign": 0.6721623037748559,
+      "suspicious": 0.1901394332469008,
+      "malicious": 0.13769826297824334
+    },
+    "margin": 0.48202287052795506
+  },
+  {
+    "id": "M016",
+    "name": "EfsPotato from temp",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.05827192252520765,
+      "low": 0.06535544247530689,
+      "medium": 0.199253188864909,
+      "high": 0.6771194461345764
+    },
+    "class_probs": {
+      "benign": 0.12362736500051455,
+      "suspicious": 0.199253188864909,
+      "malicious": 0.6771194461345764
+    },
+    "margin": 0.4778662572696674
+  },
+  {
+    "id": "M014",
+    "name": "schtasks SilentCleanup /i",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.311840905981401,
+      "low": 0.35483472394913923,
+      "medium": 0.22129202122633104,
+      "high": 0.11203234884312867
+    },
+    "class_probs": {
+      "benign": 0.6666756299305403,
+      "suspicious": 0.22129202122633104,
+      "malicious": 0.11203234884312867
+    },
+    "margin": 0.44538360870420923
+  },
+  {
+    "id": "M017",
+    "name": "RoguePotato + nc64 reverse shell",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.039689922083112325,
+      "low": 0.04725987681555516,
+      "medium": 0.18294435921434227,
+      "high": 0.7301058418869901
+    },
+    "class_probs": {
+      "benign": 0.08694979889866748,
+      "suspicious": 0.18294435921434227,
+      "malicious": 0.7301058418869901
+    },
+    "margin": 0.5471614826726479
+  },
+  {
+    "id": "M015",
+    "name": "schtasks /create from temp XML",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.27025201749937977,
+      "low": 0.3967162271067231,
+      "medium": 0.21071790836546445,
+      "high": 0.12231384702843266
+    },
+    "class_probs": {
+      "benign": 0.6669682446061029,
+      "suspicious": 0.21071790836546445,
+      "malicious": 0.12231384702843266
+    },
+    "margin": 0.4562503362406385
+  },
+  {
+    "id": "M018",
+    "name": "psexecprivesc from Public",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.12359923595421678,
+      "low": 0.19265069299059492,
+      "medium": 0.25178151245973224,
+      "high": 0.431968558595456
+    },
+    "class_probs": {
+      "benign": 0.3162499289448117,
+      "suspicious": 0.25178151245973224,
+      "malicious": 0.431968558595456
+    },
+    "margin": 0.11571862965064433
+  },
+  {
+    "id": "S008",
+    "name": "account manipulation",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.27157317139054243,
+      "low": 0.470214717278007,
+      "medium": 0.18688248009864028,
+      "high": 0.07132963123281033
+    },
+    "class_probs": {
+      "benign": 0.7417878886685494,
+      "suspicious": 0.18688248009864028,
+      "malicious": 0.07132963123281033
+    },
+    "margin": 0.5549054085699091
+  },
+  {
+    "id": "S009",
+    "name": "host/domain enumeration",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3428385388394113,
+      "low": 0.4055381711441866,
+      "medium": 0.1520779765848704,
+      "high": 0.09954531343153177
+    },
+    "class_probs": {
+      "benign": 0.7483767099835978,
+      "suspicious": 0.1520779765848704,
+      "malicious": 0.09954531343153177
+    },
+    "margin": 0.5962987333987274
+  },
+  {
+    "id": "S001",
+    "name": "dual-use administration tool",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2246316209269663,
+      "low": 0.41307174300098887,
+      "medium": 0.2115362863986207,
+      "high": 0.1507603496734242
+    },
+    "class_probs": {
+      "benign": 0.6377033639279552,
+      "suspicious": 0.2115362863986207,
+      "malicious": 0.1507603496734242
+    },
+    "margin": 0.4261670775293345
+  },
+  {
+    "id": "S020",
+    "name": "staged file write",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.11176149973104717,
+      "low": 0.1786313315015086,
+      "medium": 0.28231834047629345,
+      "high": 0.4272888282911509
+    },
+    "class_probs": {
+      "benign": 0.29039283123255577,
+      "suspicious": 0.28231834047629345,
+      "malicious": 0.4272888282911509
+    },
+    "margin": 0.13689599705859512
+  },
+  {
+    "id": "S022",
+    "name": "staged file write",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.11261773935127017,
+      "low": 0.12645565036030515,
+      "medium": 0.2632874036708554,
+      "high": 0.49763920661756933
+    },
+    "class_probs": {
+      "benign": 0.23907338971157532,
+      "suspicious": 0.2632874036708554,
+      "malicious": 0.49763920661756933
+    },
+    "margin": 0.23435180294671393
+  },
+  {
+    "id": "S004",
+    "name": "internal remote fetch",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.11396262028793597,
+      "low": 0.18238305772069424,
+      "medium": 0.2715258789095186,
+      "high": 0.4321284430818511
+    },
+    "class_probs": {
+      "benign": 0.2963456780086302,
+      "suspicious": 0.2715258789095186,
+      "malicious": 0.4321284430818511
+    },
+    "margin": 0.1357827650732209
+  },
+  {
+    "id": "S028",
+    "name": "anomalous logon",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.13302116706077358,
+      "low": 0.28994567025943435,
+      "medium": 0.3297568850124928,
+      "high": 0.24727627766729923
+    },
+    "class_probs": {
+      "benign": 0.4229668373202079,
+      "suspicious": 0.3297568850124928,
+      "malicious": 0.24727627766729923
+    },
+    "margin": 0.09320995230771512
+  },
+  {
+    "id": "S018",
+    "name": "anomalous outbound connection",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1294149961561013,
+      "low": 0.23550618736375795,
+      "medium": 0.25026219006485545,
+      "high": 0.3848166264152853
+    },
+    "class_probs": {
+      "benign": 0.36492118351985925,
+      "suspicious": 0.25026219006485545,
+      "malicious": 0.3848166264152853
+    },
+    "margin": 0.019895442895426052
+  },
+  {
+    "id": "S005",
+    "name": "persistence mechanism created",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.18344013341388965,
+      "low": 0.37013930955131547,
+      "medium": 0.27014530349532717,
+      "high": 0.17627525353946777
+    },
+    "class_probs": {
+      "benign": 0.5535794429652051,
+      "suspicious": 0.27014530349532717,
+      "malicious": 0.17627525353946777
+    },
+    "margin": 0.28343413946987794
+  },
+  {
+    "id": "S024",
+    "name": "grey-area registry change",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.14502953135757174,
+      "low": 0.22169010768455666,
+      "medium": 0.28556034414741865,
+      "high": 0.347720016810453
+    },
+    "class_probs": {
+      "benign": 0.3667196390421284,
+      "suspicious": 0.28556034414741865,
+      "malicious": 0.347720016810453
+    },
+    "margin": 0.018999622231675395
+  },
+  {
+    "id": "S026",
+    "name": "grey-area registry change",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.12429184384842175,
+      "low": 0.22832400522670576,
+      "medium": 0.28895274724693953,
+      "high": 0.35843140367793297
+    },
+    "class_probs": {
+      "benign": 0.3526158490751275,
+      "suspicious": 0.28895274724693953,
+      "malicious": 0.35843140367793297
+    },
+    "margin": 0.005815554602805473
+  },
+  {
+    "id": "S003",
+    "name": "remote administration",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.16196497626477271,
+      "low": 0.28562669067482405,
+      "medium": 0.26432530728583165,
+      "high": 0.2880830257745716
+    },
+    "class_probs": {
+      "benign": 0.44759166693959673,
+      "suspicious": 0.26432530728583165,
+      "malicious": 0.2880830257745716
+    },
+    "margin": 0.1595086411650251
+  },
+  {
+    "id": "S007",
+    "name": "pre-impact reconnaissance",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.28857279676941816,
+      "low": 0.38076174208943975,
+      "medium": 0.205560756174922,
+      "high": 0.12510470496622006
+    },
+    "class_probs": {
+      "benign": 0.6693345388588579,
+      "suspicious": 0.205560756174922,
+      "malicious": 0.12510470496622006
+    },
+    "margin": 0.4637737826839359
+  },
+  {
+    "id": "S006",
+    "name": "bulk archive to Temp",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2680138461774141,
+      "low": 0.5236832862814823,
+      "medium": 0.13575702098837444,
+      "high": 0.07254584655272918
+    },
+    "class_probs": {
+      "benign": 0.7916971324588964,
+      "suspicious": 0.13575702098837444,
+      "malicious": 0.07254584655272918
+    },
+    "margin": 0.6559401114705219
+  },
+  {
+    "id": "S002",
+    "name": "unsigned administrative tooling",
+    "gold": "suspicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.04408514654430655,
+      "low": 0.04094463476466095,
+      "medium": 0.18298594573914287,
+      "high": 0.7319842729518896
+    },
+    "class_probs": {
+      "benign": 0.0850297813089675,
+      "suspicious": 0.18298594573914287,
+      "malicious": 0.7319842729518896
+    },
+    "margin": 0.5489983272127468
+  },
+  {
+    "id": "X056",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.18990116025099518,
+      "low": 0.35032585239554215,
+      "medium": 0.24870458009507032,
+      "high": 0.21106840725839238
+    },
+    "class_probs": {
+      "benign": 0.5402270126465374,
+      "suspicious": 0.24870458009507032,
+      "malicious": 0.21106840725839238
+    },
+    "margin": 0.29152243255146704
+  },
+  {
+    "id": "X095",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.16216711686370666,
+      "low": 0.32112520258710203,
+      "medium": 0.2687503689952614,
+      "high": 0.24795731155392994
+    },
+    "class_probs": {
+      "benign": 0.4832923194508087,
+      "suspicious": 0.2687503689952614,
+      "malicious": 0.24795731155392994
+    },
+    "margin": 0.2145419504555473
+  },
+  {
+    "id": "X038",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.11949922328223371,
+      "low": 0.2422178630206218,
+      "medium": 0.2590537013336032,
+      "high": 0.37922921236354123
+    },
+    "class_probs": {
+      "benign": 0.3617170863028555,
+      "suspicious": 0.2590537013336032,
+      "malicious": 0.37922921236354123
+    },
+    "margin": 0.01751212606068575
+  },
+  {
+    "id": "X021",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.21211178806583908,
+      "low": 0.3036481115820732,
+      "medium": 0.22943612675998745,
+      "high": 0.2548039735921003
+    },
+    "class_probs": {
+      "benign": 0.5157598996479122,
+      "suspicious": 0.22943612675998745,
+      "malicious": 0.2548039735921003
+    },
+    "margin": 0.26095592605581197
+  },
+  {
+    "id": "X075",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.05136703574580601,
+      "low": 0.06554517382426553,
+      "medium": 0.1741702988911037,
+      "high": 0.7089174915388247
+    },
+    "class_probs": {
+      "benign": 0.11691220957007153,
+      "suspicious": 0.1741702988911037,
+      "malicious": 0.7089174915388247
+    },
+    "margin": 0.534747192647721
+  },
+  {
+    "id": "X090",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.03947148200022907,
+      "low": 0.053133885995030126,
+      "medium": 0.17029050821117242,
+      "high": 0.7371041237935684
+    },
+    "class_probs": {
+      "benign": 0.0926053679952592,
+      "suspicious": 0.17029050821117242,
+      "malicious": 0.7371041237935684
+    },
+    "margin": 0.566813615582396
+  },
+  {
+    "id": "X097",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.07527628622115898,
+      "low": 0.1597081555241902,
+      "medium": 0.26874230255319265,
+      "high": 0.4962732557014582
+    },
+    "class_probs": {
+      "benign": 0.2349844417453492,
+      "suspicious": 0.26874230255319265,
+      "malicious": 0.4962732557014582
+    },
+    "margin": 0.22753095314826555
+  },
+  {
+    "id": "X068",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.12863171810692575,
+      "low": 0.26905816684212364,
+      "medium": 0.3132445777192346,
+      "high": 0.2890655373317161
+    },
+    "class_probs": {
+      "benign": 0.3976898849490494,
+      "suspicious": 0.3132445777192346,
+      "malicious": 0.2890655373317161
+    },
+    "margin": 0.0844453072298148
+  },
+  {
+    "id": "X036",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.08494861288321032,
+      "low": 0.19168986936876287,
+      "medium": 0.2688028690265257,
+      "high": 0.4545586487215012
+    },
+    "class_probs": {
+      "benign": 0.2766384822519732,
+      "suspicious": 0.2688028690265257,
+      "malicious": 0.4545586487215012
+    },
+    "margin": 0.17792016646952802
+  },
+  {
+    "id": "X078",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2383718630450049,
+      "low": 0.4225554534170095,
+      "medium": 0.21422626690022226,
+      "high": 0.12484641663776329
+    },
+    "class_probs": {
+      "benign": 0.6609273164620144,
+      "suspicious": 0.21422626690022226,
+      "malicious": 0.12484641663776329
+    },
+    "margin": 0.44670104956179213
+  },
+  {
+    "id": "X093",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2540228414996514,
+      "low": 0.4479049218268364,
+      "medium": 0.22449314335576642,
+      "high": 0.07357909331774572
+    },
+    "class_probs": {
+      "benign": 0.7019277633264878,
+      "suspicious": 0.22449314335576642,
+      "malicious": 0.07357909331774572
+    },
+    "margin": 0.47743461997072134
+  },
+  {
+    "id": "X027",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.1719888307950597,
+      "low": 0.36120524040760116,
+      "medium": 0.28245506409098864,
+      "high": 0.18435086470635048
+    },
+    "class_probs": {
+      "benign": 0.5331940712026608,
+      "suspicious": 0.28245506409098864,
+      "malicious": 0.18435086470635048
+    },
+    "margin": 0.2507390071116722
+  },
+  {
+    "id": "X063",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.14721483276193356,
+      "low": 0.31950148842466514,
+      "medium": 0.25578041064350465,
+      "high": 0.2775032681698966
+    },
+    "class_probs": {
+      "benign": 0.46671632118659867,
+      "suspicious": 0.25578041064350465,
+      "malicious": 0.2775032681698966
+    },
+    "margin": 0.18921305301670205
+  },
+  {
+    "id": "X088",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.27967466156004833,
+      "low": 0.39630741036094513,
+      "medium": 0.21148169389997962,
+      "high": 0.11253623417902686
+    },
+    "class_probs": {
+      "benign": 0.6759820719209935,
+      "suspicious": 0.21148169389997962,
+      "malicious": 0.11253623417902686
+    },
+    "margin": 0.46450037802101385
+  },
+  {
+    "id": "X009",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.07569309038399522,
+      "low": 0.15543141726478116,
+      "medium": 0.26632790144421825,
+      "high": 0.5025475909070054
+    },
+    "class_probs": {
+      "benign": 0.23112450764877637,
+      "suspicious": 0.26632790144421825,
+      "malicious": 0.5025475909070054
+    },
+    "margin": 0.23621968946278715
+  },
+  {
+    "id": "X022",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.057813568942269244,
+      "low": 0.08299382493331671,
+      "medium": 0.26394229737264135,
+      "high": 0.5952503087517728
+    },
+    "class_probs": {
+      "benign": 0.14080739387558594,
+      "suspicious": 0.26394229737264135,
+      "malicious": 0.5952503087517728
+    },
+    "margin": 0.3313080113791314
+  },
+  {
+    "id": "X032",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.19136644071084075,
+      "low": 0.39128654491093084,
+      "medium": 0.23811804998280317,
+      "high": 0.1792289643954252
+    },
+    "class_probs": {
+      "benign": 0.5826529856217716,
+      "suspicious": 0.23811804998280317,
+      "malicious": 0.1792289643954252
+    },
+    "margin": 0.3445349356389684
+  },
+  {
+    "id": "X018",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.29427269556210867,
+      "low": 0.3324487234894464,
+      "medium": 0.22158978669393078,
+      "high": 0.15168879425451423
+    },
+    "class_probs": {
+      "benign": 0.6267214190515551,
+      "suspicious": 0.22158978669393078,
+      "malicious": 0.15168879425451423
+    },
+    "margin": 0.4051316323576243
+  },
+  {
+    "id": "X074",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.040292809612509674,
+      "low": 0.06154780785647064,
+      "medium": 0.18402103301251804,
+      "high": 0.7141383495185016
+    },
+    "class_probs": {
+      "benign": 0.10184061746898032,
+      "suspicious": 0.18402103301251804,
+      "malicious": 0.7141383495185016
+    },
+    "margin": 0.5301173165059836
+  },
+  {
+    "id": "X060",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3052183938907587,
+      "low": 0.3975194997822897,
+      "medium": 0.18506994491086426,
+      "high": 0.11219216141608732
+    },
+    "class_probs": {
+      "benign": 0.7027378936730484,
+      "suspicious": 0.18506994491086426,
+      "malicious": 0.11219216141608732
+    },
+    "margin": 0.5176679487621841
+  },
+  {
+    "id": "X053",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.26619709406745856,
+      "low": 0.3650682733633712,
+      "medium": 0.22809011603173893,
+      "high": 0.14064451653743126
+    },
+    "class_probs": {
+      "benign": 0.6312653674308297,
+      "suspicious": 0.22809011603173893,
+      "malicious": 0.14064451653743126
+    },
+    "margin": 0.40317525139909083
+  },
+  {
+    "id": "X048",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.30765296061902736,
+      "low": 0.36984605542954835,
+      "medium": 0.22950054816600682,
+      "high": 0.09300043578541745
+    },
+    "class_probs": {
+      "benign": 0.6774990160485757,
+      "suspicious": 0.22950054816600682,
+      "malicious": 0.09300043578541745
+    },
+    "margin": 0.4479984678825688
+  },
+  {
+    "id": "X030",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.36440268907185486,
+      "low": 0.36539726026362085,
+      "medium": 0.16991416347566304,
+      "high": 0.10028588718886132
+    },
+    "class_probs": {
+      "benign": 0.7297999493354757,
+      "suspicious": 0.16991416347566304,
+      "malicious": 0.10028588718886132
+    },
+    "margin": 0.5598857858598126
+  },
+  {
+    "id": "X051",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3334067298076591,
+      "low": 0.3023466917194171,
+      "medium": 0.18755649467522112,
+      "high": 0.17669008379770265
+    },
+    "class_probs": {
+      "benign": 0.6357534215270761,
+      "suspicious": 0.18755649467522112,
+      "malicious": 0.17669008379770265
+    },
+    "margin": 0.448196926851855
+  },
+  {
+    "id": "X080",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3413992335842812,
+      "low": 0.39936230920230903,
+      "medium": 0.19197756350042816,
+      "high": 0.06726089371298168
+    },
+    "class_probs": {
+      "benign": 0.7407615427865902,
+      "suspicious": 0.19197756350042816,
+      "malicious": 0.06726089371298168
+    },
+    "margin": 0.5487839792861621
+  },
+  {
+    "id": "X076",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.23994871328131864,
+      "low": 0.36117605307081396,
+      "medium": 0.2527590581694069,
+      "high": 0.14611617547846045
+    },
+    "class_probs": {
+      "benign": 0.6011247663521326,
+      "suspicious": 0.2527590581694069,
+      "malicious": 0.14611617547846045
+    },
+    "margin": 0.3483657081827257
+  },
+  {
+    "id": "X065",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3158441883106542,
+      "low": 0.36791789277959824,
+      "medium": 0.18554600093248724,
+      "high": 0.13069191797726024
+    },
+    "class_probs": {
+      "benign": 0.6837620810902525,
+      "suspicious": 0.18554600093248724,
+      "malicious": 0.13069191797726024
+    },
+    "margin": 0.49821608015776525
+  },
+  {
+    "id": "X058",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.32757528655829643,
+      "low": 0.3714215977846245,
+      "medium": 0.19609947491587296,
+      "high": 0.104903640741206
+    },
+    "class_probs": {
+      "benign": 0.698996884342921,
+      "suspicious": 0.19609947491587296,
+      "malicious": 0.104903640741206
+    },
+    "margin": 0.502897409427048
+  },
+  {
+    "id": "X064",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3989753104239622,
+      "low": 0.35755321721951017,
+      "medium": 0.18500273301905157,
+      "high": 0.05846873933747611
+    },
+    "class_probs": {
+      "benign": 0.7565285276434723,
+      "suspicious": 0.18500273301905157,
+      "malicious": 0.05846873933747611
+    },
+    "margin": 0.5715257946244208
+  },
+  {
+    "id": "X034",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.43800826871383214,
+      "low": 0.40985088219022114,
+      "medium": 0.1162104893213233,
+      "high": 0.03593035977462338
+    },
+    "class_probs": {
+      "benign": 0.8478591509040533,
+      "suspicious": 0.1162104893213233,
+      "malicious": 0.03593035977462338
+    },
+    "margin": 0.73164866158273
+  },
+  {
+    "id": "X040",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3807296142711474,
+      "low": 0.41536118638633795,
+      "medium": 0.12766692585829242,
+      "high": 0.07624227348422215
+    },
+    "class_probs": {
+      "benign": 0.7960908006574854,
+      "suspicious": 0.12766692585829242,
+      "malicious": 0.07624227348422215
+    },
+    "margin": 0.668423874799193
+  },
+  {
+    "id": "X023",
+    "name": "-",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.22684124208709036,
+      "low": 0.3992514402702411,
+      "medium": 0.2067574939055235,
+      "high": 0.16714982373714493
+    },
+    "class_probs": {
+      "benign": 0.6260926823573315,
+      "suspicious": 0.2067574939055235,
+      "malicious": 0.16714982373714493
+    },
+    "margin": 0.419335188451808
+  },
+  {
+    "id": "X072",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.22866649536453887,
+      "low": 0.28982394093161457,
+      "medium": 0.23105236685743505,
+      "high": 0.25045719684641143
+    },
+    "class_probs": {
+      "benign": 0.5184904362961534,
+      "suspicious": 0.23105236685743505,
+      "malicious": 0.25045719684641143
+    },
+    "margin": 0.268033239449742
+  },
+  {
+    "id": "X006",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1528443813657607,
+      "low": 0.21467654027912028,
+      "medium": 0.3001742858492039,
+      "high": 0.33230479250591505
+    },
+    "class_probs": {
+      "benign": 0.367520921644881,
+      "suspicious": 0.3001742858492039,
+      "malicious": 0.33230479250591505
+    },
+    "margin": 0.035216129138965935
+  },
+  {
+    "id": "X089",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3403527148876874,
+      "low": 0.3860742123710952,
+      "medium": 0.17979442981326074,
+      "high": 0.09377864292795664
+    },
+    "class_probs": {
+      "benign": 0.7264269272587827,
+      "suspicious": 0.17979442981326074,
+      "malicious": 0.09377864292795664
+    },
+    "margin": 0.5466324974455219
+  },
+  {
+    "id": "X052",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3133767906456863,
+      "low": 0.402009405212418,
+      "medium": 0.2224449294920911,
+      "high": 0.06216887464980454
+    },
+    "class_probs": {
+      "benign": 0.7153861958581043,
+      "suspicious": 0.2224449294920911,
+      "malicious": 0.06216887464980454
+    },
+    "margin": 0.49294126636601315
+  },
+  {
+    "id": "X066",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.29578687031700834,
+      "low": 0.4263004505984393,
+      "medium": 0.20173547623656268,
+      "high": 0.07617720284798966
+    },
+    "class_probs": {
+      "benign": 0.7220873209154477,
+      "suspicious": 0.20173547623656268,
+      "malicious": 0.07617720284798966
+    },
+    "margin": 0.5203518446788851
+  },
+  {
+    "id": "X042",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3179938554918226,
+      "low": 0.3703082459321664,
+      "medium": 0.20245503573974746,
+      "high": 0.10924286283626358
+    },
+    "class_probs": {
+      "benign": 0.688302101423989,
+      "suspicious": 0.20245503573974746,
+      "malicious": 0.10924286283626358
+    },
+    "margin": 0.4858470656842415
+  },
+  {
+    "id": "X059",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.19781229360471353,
+      "low": 0.2556672993208125,
+      "medium": 0.2677906535636329,
+      "high": 0.27872975351084106
+    },
+    "class_probs": {
+      "benign": 0.45347959292552603,
+      "suspicious": 0.2677906535636329,
+      "malicious": 0.27872975351084106
+    },
+    "margin": 0.17474983941468497
+  },
+  {
+    "id": "X050",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3028189085490023,
+      "low": 0.33517079738012806,
+      "medium": 0.1833142452729166,
+      "high": 0.1786960487979531
+    },
+    "class_probs": {
+      "benign": 0.6379897059291304,
+      "suspicious": 0.1833142452729166,
+      "malicious": 0.1786960487979531
+    },
+    "margin": 0.4546754606562138
+  },
+  {
+    "id": "X055",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.14670704339520216,
+      "low": 0.3583252738211252,
+      "medium": 0.3104710184780939,
+      "high": 0.18449666430557882
+    },
+    "class_probs": {
+      "benign": 0.5050323172163274,
+      "suspicious": 0.3104710184780939,
+      "malicious": 0.18449666430557882
+    },
+    "margin": 0.19456129873823347
+  },
+  {
+    "id": "X024",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.35479583864304853,
+      "low": 0.35548439114416525,
+      "medium": 0.18944562973944176,
+      "high": 0.10027414047334444
+    },
+    "class_probs": {
+      "benign": 0.7102802297872137,
+      "suspicious": 0.18944562973944176,
+      "malicious": 0.10027414047334444
+    },
+    "margin": 0.5208346000477719
+  },
+  {
+    "id": "X067",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3813258238452426,
+      "low": 0.3408930691688492,
+      "medium": 0.16905971817046994,
+      "high": 0.10872138881543823
+    },
+    "class_probs": {
+      "benign": 0.7222188930140918,
+      "suspicious": 0.16905971817046994,
+      "malicious": 0.10872138881543823
+    },
+    "margin": 0.5531591748436219
+  },
+  {
+    "id": "X005",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3224490336911719,
+      "low": 0.3034127202083269,
+      "medium": 0.19289691204838288,
+      "high": 0.18124133405211837
+    },
+    "class_probs": {
+      "benign": 0.6258617538994988,
+      "suspicious": 0.19289691204838288,
+      "malicious": 0.18124133405211837
+    },
+    "margin": 0.43296484185111594
+  },
+  {
+    "id": "X085",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.16030690077779755,
+      "low": 0.264203616951825,
+      "medium": 0.2647418560731862,
+      "high": 0.3107476261971912
+    },
+    "class_probs": {
+      "benign": 0.42451051772962256,
+      "suspicious": 0.2647418560731862,
+      "malicious": 0.3107476261971912
+    },
+    "margin": 0.11376289153243135
+  },
+  {
+    "id": "X026",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.313908303037404,
+      "low": 0.2937037601256399,
+      "medium": 0.20854759220967517,
+      "high": 0.1838403446272809
+    },
+    "class_probs": {
+      "benign": 0.607612063163044,
+      "suspicious": 0.20854759220967517,
+      "malicious": 0.1838403446272809
+    },
+    "margin": 0.3990644709533688
+  },
+  {
+    "id": "X031",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.35600218063371375,
+      "low": 0.3071738671789842,
+      "medium": 0.17877796689866096,
+      "high": 0.15804598528864117
+    },
+    "class_probs": {
+      "benign": 0.663176047812698,
+      "suspicious": 0.17877796689866096,
+      "malicious": 0.15804598528864117
+    },
+    "margin": 0.484398080914037
+  },
+  {
+    "id": "X045",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1498683220420653,
+      "low": 0.19659618155508424,
+      "medium": 0.28218203852704354,
+      "high": 0.37135345787580704
+    },
+    "class_probs": {
+      "benign": 0.34646450359714953,
+      "suspicious": 0.28218203852704354,
+      "malicious": 0.37135345787580704
+    },
+    "margin": 0.024888954278657505
+  },
+  {
+    "id": "X011",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.31875089665606904,
+      "low": 0.32290462210848386,
+      "medium": 0.18128446198082618,
+      "high": 0.1770600192546208
+    },
+    "class_probs": {
+      "benign": 0.641655518764553,
+      "suspicious": 0.18128446198082618,
+      "malicious": 0.1770600192546208
+    },
+    "margin": 0.4603710567837268
+  },
+  {
+    "id": "X077",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.18563670865633305,
+      "low": 0.3481574845295553,
+      "medium": 0.3266752770487689,
+      "high": 0.13953052976534275
+    },
+    "class_probs": {
+      "benign": 0.5337941931858884,
+      "suspicious": 0.3266752770487689,
+      "malicious": 0.13953052976534275
+    },
+    "margin": 0.20711891613711947
+  },
+  {
+    "id": "X007",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.1965118792936214,
+      "low": 0.36175205702436986,
+      "medium": 0.2561724933137226,
+      "high": 0.1855635703682861
+    },
+    "class_probs": {
+      "benign": 0.5582639363179913,
+      "suspicious": 0.2561724933137226,
+      "malicious": 0.1855635703682861
+    },
+    "margin": 0.3020914430042687
+  },
+  {
+    "id": "X061",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3064199815414741,
+      "low": 0.3070023539699226,
+      "medium": 0.20778940702309517,
+      "high": 0.17878825746550817
+    },
+    "class_probs": {
+      "benign": 0.6134223355113967,
+      "suspicious": 0.20778940702309517,
+      "malicious": 0.17878825746550817
+    },
+    "margin": 0.4056329284883015
+  },
+  {
+    "id": "X012",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2073385507047713,
+      "low": 0.347724460767762,
+      "medium": 0.24601571358328134,
+      "high": 0.19892127494418532
+    },
+    "class_probs": {
+      "benign": 0.5550630114725332,
+      "suspicious": 0.24601571358328134,
+      "malicious": 0.19892127494418532
+    },
+    "margin": 0.3090472978892519
+  },
+  {
+    "id": "X098",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.1583495053372036,
+      "low": 0.2960508851830759,
+      "medium": 0.3245132335287258,
+      "high": 0.22108637595099478
+    },
+    "class_probs": {
+      "benign": 0.4544003905202795,
+      "suspicious": 0.3245132335287258,
+      "malicious": 0.22108637595099478
+    },
+    "margin": 0.12988715699155368
+  },
+  {
+    "id": "X019",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3037397400992768,
+      "low": 0.40054626374259183,
+      "medium": 0.18174944110629598,
+      "high": 0.11396455505183535
+    },
+    "class_probs": {
+      "benign": 0.7042860038418686,
+      "suspicious": 0.18174944110629598,
+      "malicious": 0.11396455505183535
+    },
+    "margin": 0.5225365627355726
+  },
+  {
+    "id": "X014",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.17278996666524538,
+      "low": 0.3457119522673379,
+      "medium": 0.29548716643597445,
+      "high": 0.1860109146314422
+    },
+    "class_probs": {
+      "benign": 0.5185019189325832,
+      "suspicious": 0.29548716643597445,
+      "malicious": 0.1860109146314422
+    },
+    "margin": 0.2230147524966088
+  },
+  {
+    "id": "X094",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.31041250192417197,
+      "low": 0.36189081118964983,
+      "medium": 0.2104833639881292,
+      "high": 0.11721332289804899
+    },
+    "class_probs": {
+      "benign": 0.6723033131138219,
+      "suspicious": 0.2104833639881292,
+      "malicious": 0.11721332289804899
+    },
+    "margin": 0.4618199491256927
+  },
+  {
+    "id": "X084",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.296380380443877,
+      "low": 0.30851559906041787,
+      "medium": 0.23037506386426473,
+      "high": 0.16472895663144044
+    },
+    "class_probs": {
+      "benign": 0.6048959795042949,
+      "suspicious": 0.23037506386426473,
+      "malicious": 0.16472895663144044
+    },
+    "margin": 0.3745209156400301
+  },
+  {
+    "id": "X029",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.15970811213653188,
+      "low": 0.35932818686571416,
+      "medium": 0.2469572289769857,
+      "high": 0.2340064720207682
+    },
+    "class_probs": {
+      "benign": 0.519036299002246,
+      "suspicious": 0.2469572289769857,
+      "malicious": 0.2340064720207682
+    },
+    "margin": 0.27207907002526033
+  },
+  {
+    "id": "X033",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3393426983859837,
+      "low": 0.38579215870234757,
+      "medium": 0.1871533292555706,
+      "high": 0.08771181365609808
+    },
+    "class_probs": {
+      "benign": 0.7251348570883313,
+      "suspicious": 0.1871533292555706,
+      "malicious": 0.08771181365609808
+    },
+    "margin": 0.5379815278327607
+  },
+  {
+    "id": "X016",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3983899368919475,
+      "low": 0.35628406482743147,
+      "medium": 0.1765873169491575,
+      "high": 0.06873868133146348
+    },
+    "class_probs": {
+      "benign": 0.7546740017193789,
+      "suspicious": 0.1765873169491575,
+      "malicious": 0.06873868133146348
+    },
+    "margin": 0.5780866847702214
+  },
+  {
+    "id": "X015",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.2937019354103909,
+      "low": 0.43288680384342715,
+      "medium": 0.21076002088341994,
+      "high": 0.06265123986276203
+    },
+    "class_probs": {
+      "benign": 0.7265887392538181,
+      "suspicious": 0.21076002088341994,
+      "malicious": 0.06265123986276203
+    },
+    "margin": 0.5158287183703981
+  },
+  {
+    "id": "X037",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.35633035331084445,
+      "low": 0.40449784084444057,
+      "medium": 0.19659298224978228,
+      "high": 0.04257882359493271
+    },
+    "class_probs": {
+      "benign": 0.760828194155285,
+      "suspicious": 0.19659298224978228,
+      "malicious": 0.04257882359493271
+    },
+    "margin": 0.5642352119055027
+  },
+  {
+    "id": "X013",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3651836357434857,
+      "low": 0.4065243694319616,
+      "medium": 0.17248408498500511,
+      "high": 0.05580790983954751
+    },
+    "class_probs": {
+      "benign": 0.7717080051754472,
+      "suspicious": 0.17248408498500511,
+      "malicious": 0.05580790983954751
+    },
+    "margin": 0.5992239201904421
+  },
+  {
+    "id": "X002",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3482325143334186,
+      "low": 0.37072127871187005,
+      "medium": 0.17276909955624314,
+      "high": 0.10827710739846819
+    },
+    "class_probs": {
+      "benign": 0.7189537930452887,
+      "suspicious": 0.17276909955624314,
+      "malicious": 0.10827710739846819
+    },
+    "margin": 0.5461846934890455
+  },
+  {
+    "id": "X003",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3666933787828794,
+      "low": 0.3450565443212122,
+      "medium": 0.20599001885760904,
+      "high": 0.08226005803829944
+    },
+    "class_probs": {
+      "benign": 0.7117499231040916,
+      "suspicious": 0.20599001885760904,
+      "malicious": 0.08226005803829944
+    },
+    "margin": 0.5057599042464825
+  },
+  {
+    "id": "X073",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.1425884344942596,
+      "low": 0.2329396646820701,
+      "medium": 0.23810235113342315,
+      "high": 0.3863695496902471
+    },
+    "class_probs": {
+      "benign": 0.3755280991763297,
+      "suspicious": 0.23810235113342315,
+      "malicious": 0.3863695496902471
+    },
+    "margin": 0.010841450513917439
+  },
+  {
+    "id": "X087",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.17603546508622417,
+      "low": 0.33431030069053985,
+      "medium": 0.27647979279036417,
+      "high": 0.21317444143287181
+    },
+    "class_probs": {
+      "benign": 0.510345765776764,
+      "suspicious": 0.27647979279036417,
+      "malicious": 0.21317444143287181
+    },
+    "margin": 0.23386597298639988
+  },
+  {
+    "id": "X096",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.35969821410459724,
+      "low": 0.3696637752413861,
+      "medium": 0.17502877801048708,
+      "high": 0.09560923264352951
+    },
+    "class_probs": {
+      "benign": 0.7293619893459833,
+      "suspicious": 0.17502877801048708,
+      "malicious": 0.09560923264352951
+    },
+    "margin": 0.5543332113354962
+  },
+  {
+    "id": "X083",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.24166891167541177,
+      "low": 0.4255322389738663,
+      "medium": 0.1943077636308935,
+      "high": 0.13849108571982854
+    },
+    "class_probs": {
+      "benign": 0.6672011506492781,
+      "suspicious": 0.1943077636308935,
+      "malicious": 0.13849108571982854
+    },
+    "margin": 0.47289338701838457
+  },
+  {
+    "id": "X039",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3105668637513041,
+      "low": 0.3147576925769463,
+      "medium": 0.20236029059465863,
+      "high": 0.17231515307709103
+    },
+    "class_probs": {
+      "benign": 0.6253245563282503,
+      "suspicious": 0.20236029059465863,
+      "malicious": 0.17231515307709103
+    },
+    "margin": 0.4229642657335917
+  },
+  {
+    "id": "X043",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.3886606113335359,
+      "low": 0.3658371297189018,
+      "medium": 0.16484351232408842,
+      "high": 0.08065874662347398
+    },
+    "class_probs": {
+      "benign": 0.7544977410524377,
+      "suspicious": 0.16484351232408842,
+      "malicious": 0.08065874662347398
+    },
+    "margin": 0.5896542287283493
+  },
+  {
+    "id": "X100",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.17426790099236764,
+      "low": 0.4264459010480136,
+      "medium": 0.22045247183424785,
+      "high": 0.17883372612537082
+    },
+    "class_probs": {
+      "benign": 0.6007138020403813,
+      "suspicious": 0.22045247183424785,
+      "malicious": 0.17883372612537082
+    },
+    "margin": 0.3802613302061334
+  },
+  {
+    "id": "X069",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.19787551196805536,
+      "low": 0.2611976745896676,
+      "medium": 0.24608444690819092,
+      "high": 0.29484236653408613
+    },
+    "class_probs": {
+      "benign": 0.45907318655772295,
+      "suspicious": 0.24608444690819092,
+      "malicious": 0.29484236653408613
+    },
+    "margin": 0.16423082002363681
+  },
+  {
+    "id": "X010",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.44535826997490235,
+      "low": 0.37360813541728843,
+      "medium": 0.14156945704446117,
+      "high": 0.039464137563348024
+    },
+    "class_probs": {
+      "benign": 0.8189664053921908,
+      "suspicious": 0.14156945704446117,
+      "malicious": 0.039464137563348024
+    },
+    "margin": 0.6773969483477296
+  },
+  {
+    "id": "X041",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.48733712938243645,
+      "low": 0.37173147900265907,
+      "medium": 0.1083447067488047,
+      "high": 0.03258668486609985
+    },
+    "class_probs": {
+      "benign": 0.8590686083850956,
+      "suspicious": 0.1083447067488047,
+      "malicious": 0.03258668486609985
+    },
+    "margin": 0.7507239016362909
+  },
+  {
+    "id": "X079",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "malicious",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.08499267382597066,
+      "low": 0.13076037557445544,
+      "medium": 0.2306320660884328,
+      "high": 0.553614884511141
+    },
+    "class_probs": {
+      "benign": 0.2157530494004261,
+      "suspicious": 0.2306320660884328,
+      "malicious": 0.553614884511141
+    },
+    "margin": 0.32298281842270826
+  },
+  {
+    "id": "X004",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.17829003795312146,
+      "low": 0.27811074164192606,
+      "medium": 0.24169271255149483,
+      "high": 0.3019065078534577
+    },
+    "class_probs": {
+      "benign": 0.45640077959504755,
+      "suspicious": 0.24169271255149483,
+      "malicious": 0.3019065078534577
+    },
+    "margin": 0.15449427174158986
+  },
+  {
+    "id": "X062",
+    "name": "-",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.25307556227023015,
+      "low": 0.410295133435103,
+      "medium": 0.21233805635571776,
+      "high": 0.12429124793894912
+    },
+    "class_probs": {
+      "benign": 0.6633706957053331,
+      "suspicious": 0.21233805635571776,
+      "malicious": 0.12429124793894912
+    },
+    "margin": 0.45103263934961535
+  },
+  {
+    "id": "X082",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "high",
+    "sev_probs": {
+      "none": 0.14603243205285416,
+      "low": 0.20989279651911985,
+      "medium": 0.3137634306936752,
+      "high": 0.33031134073435087
+    },
+    "class_probs": {
+      "benign": 0.355925228571974,
+      "suspicious": 0.3137634306936752,
+      "malicious": 0.33031134073435087
+    },
+    "margin": 0.02561388783762314
+  },
+  {
+    "id": "X020",
+    "name": "-",
+    "gold": "suspicious",
+    "pred": "benign",
+    "severity": "medium",
+    "sev_probs": {
+      "none": 0.14028137361473092,
+      "low": 0.2529834858167687,
+      "medium": 0.31289053332393724,
+      "high": 0.29384460724456307
+    },
+    "class_probs": {
+      "benign": 0.39326485943149964,
+      "suspicious": 0.31289053332393724,
+      "malicious": 0.29384460724456307
+    },
+    "margin": 0.0803743261075624
+  },
+  {
+    "id": "X008",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.30774171322585697,
+      "low": 0.3165611090079147,
+      "medium": 0.19629126122663984,
+      "high": 0.1794059165395886
+    },
+    "class_probs": {
+      "benign": 0.6243028222337716,
+      "suspicious": 0.19629126122663984,
+      "malicious": 0.1794059165395886
+    },
+    "margin": 0.4280115610071318
+  },
+  {
+    "id": "X001",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "none",
+    "sev_probs": {
+      "none": 0.4459947928614004,
+      "low": 0.38209088376735906,
+      "medium": 0.13574677603474394,
+      "high": 0.036167547336496686
+    },
+    "class_probs": {
+      "benign": 0.8280856766287594,
+      "suspicious": 0.13574677603474394,
+      "malicious": 0.036167547336496686
+    },
+    "margin": 0.6923389005940155
+  },
+  {
+    "id": "X081",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.24865485192912268,
+      "low": 0.4112312477413748,
+      "medium": 0.20381588742099568,
+      "high": 0.13629801290850682
+    },
+    "class_probs": {
+      "benign": 0.6598860996704975,
+      "suspicious": 0.20381588742099568,
+      "malicious": 0.13629801290850682
+    },
+    "margin": 0.45607021224950184
+  },
+  {
+    "id": "X092",
+    "name": "-",
+    "gold": "malicious",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3477700702861334,
+      "low": 0.36517626661769237,
+      "medium": 0.21139961527697954,
+      "high": 0.07565404781919471
+    },
+    "class_probs": {
+      "benign": 0.7129463369038258,
+      "suspicious": 0.21139961527697954,
+      "malicious": 0.07565404781919471
+    },
+    "margin": 0.5015467216268463
+  },
+  {
+    "id": "X049",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.20386838788516862,
+      "low": 0.3163561466815173,
+      "medium": 0.22814154229577296,
+      "high": 0.2516339231375411
+    },
+    "class_probs": {
+      "benign": 0.5202245345666859,
+      "suspicious": 0.22814154229577296,
+      "malicious": 0.2516339231375411
+    },
+    "margin": 0.2685906114291448
+  },
+  {
+    "id": "X035",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.3150096295570427,
+      "low": 0.3194547208872173,
+      "medium": 0.1791735919549933,
+      "high": 0.1863620576007467
+    },
+    "class_probs": {
+      "benign": 0.63446435044426,
+      "suspicious": 0.1791735919549933,
+      "malicious": 0.1863620576007467
+    },
+    "margin": 0.4481022928435133
+  },
+  {
+    "id": "X070",
+    "name": "-",
+    "gold": "benign",
+    "pred": "benign",
+    "severity": "low",
+    "sev_probs": {
+      "none": 0.33575256787350616,
+      "low": 0.38084338946298674,
+      "medium": 0.1886372591564196,
+      "high": 0.09476678350708749
+    },
+    "class_probs": {
+      "benign": 0.7165959573364928,
+      "suspicious": 0.1886372591564196,
+      "malicious": 0.09476678350708749
+    },
+    "margin": 0.5279586981800732
+  }
+]

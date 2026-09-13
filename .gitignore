@@ -1,0 +1,38 @@
+# Weights and build output — regenerate with train_qlora.py / merge_export.py
+adapters/
+dist/
+.venv/
+__pycache__/
+*.pyc
+
+# Raw corpora. sysmon-benign.evtx is 63MB and attack captures come from
+# EVTX-ATTACK-SAMPLES; both are inputs, not artefacts. See README for sources.
+*.evtx
+sysmon.jsonl
+attack_raw.jsonl
+triage_queue.jsonl
+proposed_labels.json
+group_index.json
+
+# Regenerable from the committed data
+sft_train.jsonl
+sft_val.jsonl
+train_real.jsonl
+train_pool*.jsonl
+candidates/
+events/
+train_benign/
+train_susp/
+benign_events*/
+suspicious_events*/
+attack_events*/
+_archive/
+_pre_boundary/
+
+# Run logs, except the measurements the README cites
+logs/*
+!logs/v3/
+logs/v3/*
+!logs/v3/ref_*.json
+!logs/v3/ckpt_step282.json
+!logs/v3/merged_verify.json
